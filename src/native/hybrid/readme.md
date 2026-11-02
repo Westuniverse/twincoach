@@ -29,7 +29,7 @@ headers, including the model-specific `tail_program_header` asset.
 Within the assembled runtime, build on the matching ARM/VART environment:
 
 ```sh
-sh candidate/hybrid_stream_20261031/pair_worker/compile_native.sh
+sh native/hybrid/pair_worker/compile_native.sh
 ```
 
 The resulting executable is supplied as `runtime/hybrid_pair_worker`. Weights,

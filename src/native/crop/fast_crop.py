@@ -8,8 +8,8 @@ import cv2
 import numpy as np
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent/'tail4_live_frontend_20261030'),
-              str(HERE.parent/'tail4_preview_adapter_20261030')]
+sys.path[:0]=[str(HERE.parent/'frontend'),
+              str(HERE.parent/'adapter')]
 from live_frontend import Q7_RGB_LUT
 from preview_adapter import FrameRoi
 

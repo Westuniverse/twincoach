@@ -6,7 +6,7 @@ import threading
 from time import monotonic
 
 HERE=Path(__file__).resolve().parent
-sys.path.insert(0,str(HERE.parent/'tail4_combined_worker_20261030'))
+sys.path.insert(0,str(HERE.parent/'client'))
 from combined_client import CombinedWorker, worker_environment
 import combined_protocol as wire
 from posepriv_coach.movenet_cnn_worker import MoveNetCnnWorkerError

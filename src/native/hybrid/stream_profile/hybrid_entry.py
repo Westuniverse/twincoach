@@ -9,11 +9,11 @@ sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'pair_worker'))
 def run_hybrid_preview(*args):
     # Unlike the public feeder, this thin main has no package-path side effects
     # when imported by spawn. Restore the new package's own source closure here.
-    cfg=json.loads(Path(args[0]).read_text());package=Path(cfg['hybrid_package_root']);candidate=package/'candidate'
+    cfg=json.loads(Path(args[0]).read_text());package=Path(cfg['hybrid_package_root']);native=package/'native'
     public_entry=cfg['hybrid_public_entry']
-    sys.path[:0]=[str(package/'src'),public_entry]+[str(candidate/n)for n in (
-        'tail4_native_gl_submit_20261031','tail4_world_math_20261031','tail4_stream_preview_20261030',
-        'tail4_stream_process_20261030','tail4_geometry_process_20261030')]
+    sys.path[:0]=[str(package/'src'),public_entry]+[str(native/n)for n in (
+        'gl','world','actor',
+        'process','geometry')]
     import posepriv_coach
     posepriv_coach.__path__.insert(0,public_entry)
     import posepriv_coach.field_preview_full33_split as entry

@@ -4,7 +4,7 @@
     "tail4_scoring_profile": "hybrid_side_full33_front_lightning_raw17_v1",
     "tail4_stream_capacity": 4,
     "hybrid_package_root": ".",
-    "hybrid_public_entry": "candidate/tail4_public_profile_20261031/entry",
+    "hybrid_public_entry": "native/profile/entry",
     "hybrid_pair_worker": "runtime/hybrid_pair_worker",
     "hybrid_lightning_config": "state/hybrid-lightning.json"
   },

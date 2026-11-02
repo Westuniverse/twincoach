@@ -1,9 +1,9 @@
 {
   "project": "TwinCoach",
-  "tool": "Vivado 2026.1",
+  "tool": "Vivado",
   "stage": "Project creation, BD validation and wrapper creation",
   "exit_code": 0,
-  "completion_marker": "POSEPRIV_DI46_PROJECT_CREATED",
+  "completion_marker": "TWINCOACH_PROJECT_CREATED",
   "hdl_inputs": 44,
   "synthesis": false,
   "implementation": false,

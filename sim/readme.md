@@ -15,4 +15,4 @@ python3 -m unittest discover -s sim -p 'test_*.py' -v
 | public.json | 源码映射、Python 解析、控制引用、文档链接与主机测试结果 |
 | project.json | Vivado 工程创建、BD 校验与 wrapper 创建结果 |
 
-[性能数据](../data/results.json) 和 build/di46/reports 提供 FPGA 资源及链路测量依据。工程创建成功表示工程输入和 BD 可用，资源及时序以实现报告为准。
+[性能数据](../data/results.json) 和 build/fpga/reports 提供 FPGA 资源及链路测量依据。工程创建成功表示工程输入和 BD 可用，资源及时序以实现报告为准。

@@ -9,7 +9,7 @@
     {
       "check": "runtime_source_closure",
       "passed": true,
-      "files": 401
+      "files": 399
     },
     {
       "check": "python_source_parse",
@@ -19,30 +19,6 @@
       "check": "actual_hdl_inputs",
       "passed": true,
       "files": 44
-    },
-    {
-      "check": "control_reference",
-      "passed": true,
-      "script": "restore.ps1",
-      "target": "restore-p4.ps1"
-    },
-    {
-      "check": "control_reference",
-      "passed": true,
-      "script": "stop.ps1",
-      "target": "stop-run.ps1"
-    },
-    {
-      "check": "control_reference",
-      "passed": true,
-      "script": "start.ps1",
-      "target": "start-hybrid.ps1"
-    },
-    {
-      "check": "control_reference",
-      "passed": true,
-      "script": "start.ps1",
-      "target": "start-full.ps1"
     },
     {
       "check": "document_link",
@@ -96,6 +72,12 @@
       "check": "document_link",
       "passed": true,
       "document": "readme.md",
+      "target": "build/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
       "target": "license.txt"
     },
     {
@@ -114,13 +96,25 @@
       "check": "document_link",
       "passed": true,
       "document": "report/design.md",
-      "target": "results.md"
+      "target": "interfaces.md"
     },
     {
       "check": "document_link",
       "passed": true,
       "document": "report/design.md",
-      "target": "../build/readme.md"
+      "target": "ddr.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "exercises.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "results.md"
     },
     {
       "check": "document_link",
@@ -132,19 +126,43 @@
       "check": "document_link",
       "passed": true,
       "document": "report/design.md",
-      "target": "llm.md"
+      "target": "assets.md"
     },
     {
       "check": "document_link",
       "passed": true,
       "document": "report/design.md",
-      "target": "../skill/readme.md"
+      "target": "../build/readme.md"
     },
     {
       "check": "document_link",
       "passed": true,
       "document": "report/design.md",
-      "target": "gaps.md"
+      "target": "scope.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "roadmap.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "development.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "../data/results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "ddr.md"
     },
     {
       "check": "host_tests",

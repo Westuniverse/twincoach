@@ -19,7 +19,7 @@
   ],
   "existing_registration": [
     "docs/third_party_dependencies.md",
-    "docs/board_post_runtime_dependencies_20261023.md"
+    "report/third_party.md"
   ],
   "external_only": [
     "all weights/xmodel/tflite/npz",
@@ -27,5 +27,5 @@
     "ELF/ko/so",
     "personal mesh or video"
   ],
-  "common_source": "../tail4_shm_worker_20261030/tail4_shm_worker.cpp"
+  "common_source": "../worker/tail4_shm_worker.cpp"
 }

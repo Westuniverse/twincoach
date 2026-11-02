@@ -9,8 +9,8 @@ import sys
 from types import MappingProxyType
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent/'tail4_stream_preview_20261030'),
-              str(HERE.parent/'tail4_stream_worker_20261030')]
+sys.path[:0]=[str(HERE.parent/'actor'),
+              str(HERE.parent/'stream')]
 from posepriv_coach.field_preview_process import (InferenceProcess as BaseInferenceProcess,
     inference_metadata,inference_parts,WORK_HEADER,_copy_images_into_lease)
 from posepriv_coach.avatar_image_source import AvatarImageSource

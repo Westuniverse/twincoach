@@ -13,7 +13,7 @@ import sys
 ROOT=Path(__file__).resolve().parent
 STATE=ROOT/'state'
 SESSION=STATE/'session.json'
-ENTRY=ROOT/'candidate/tail4_public_profile_20261031/entry/run_preview.py'
+ENTRY=ROOT/'native/profile/entry/run_preview.py'
 PATH_KEYS=('python_path','worker','model','xclbin','skinning_validator','mesh','rules',
     'preview_affine_library','preview_bone_affine_library','preview_normal_prep_library',
     'preview_rig_tail_library','tail4_detector_model','tail4_crop_library','tail4_roi_crop_library','tail4_decode_library',

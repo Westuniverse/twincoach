@@ -1,11 +1,56 @@
-# 板端控制
+# 板端控制与适配
 
-start.ps1、test.ps1、stop.ps1 分别启动、自检和停止应用；start-full.ps1、start-hybrid.ps1 等为内部控制入口。PC 只发出 SSH 控制命令，识别、几何、蒙皮和绘制在板端执行。
+## 通用控制入口
 
-先按 build/stage.py 装配源码并准备匹配资产及板端基础环境，再部署到指定 BoardRoot。基础系统需匹配 VART/XRT、图形环境和内核驱动；配套板端内核为 5.15.0-1027-xilinx-zynqmp，硬件为 di46ddr200_20261031。
+控制端只需要 Python 和 OpenSSH，可在 Windows、Linux 或 macOS 上运行。计算与显示在 KV260 上执行。
 
-显式传入 BoardIP、BoardRoot、Front 和 Side 可适配自己的网络与摄像头接线。逻辑源、物理视角、评分映射和显示顺序分别处理，不要仅按画面左右交换评分输入。
+```bash
+python3 board/control.py start --host 192.168.1.100
+python3 board/control.py check --host 192.168.1.100
+python3 board/control.py status --host 192.168.1.100
+python3 board/control.py stop --host 192.168.1.100
+```
 
-默认是双路 full33_dpu_tail4。运行前应检查 boot manifest 与内核，按匹配 ABI 准备 Tail4/shared 驱动。普通 start/stop 不更换位流。
+默认安装目录为远端用户的 ~/twincoach，~ 在远端展开。--user、--port 和 --root 可覆盖用户、端口和目录；也可使用 TWINCOACH_HOST、TWINCOACH_USER、TWINCOACH_ROOT 环境变量。
 
-角色 mesh、权重、私人标定与生成固件不随公开源码分发；参见 report/assets.md。
+## 配置文件
+
+复制 config.example.json 为 config.json，再填入实际设备信息：
+
+```bash
+python3 board/control.py start --config board/config.json --dry-run
+python3 board/control.py start --config board/config.json
+```
+
+命令行参数优先于配置文件。用户配置不进入 Git。
+
+| 字段 | 作用 |
+| --- | --- |
+| host、user、port | SSH 目标 |
+| root | 远端安装目录，支持 ~ 和空格 |
+| front、side | 正面和侧面摄像头设备，推荐使用稳定的 /dev/v4l/by-id/ 路径 |
+| front_rotation、side_rotation | 图像旋转，支持 0/90/180/270 度 |
+| display | 远端显示会话，如 :0 |
+| xauthority | 显示授权文件；为空时使用远端 XAUTHORITY 或该用户的 GDM 路径 |
+| mode | full33 或 hybrid |
+| profile | 相对安装目录的配置文件，或绝对路径 |
+| swap_views | 显式交换评分视角映射 |
+
+正面与侧面按实际物理视角配置，显示位置与评分映射分别处理。更换相机或摆放位置时，应同时调整旋转、内外参和角色绑定。
+
+## Windows 入口
+
+```powershell
+.\board\start.ps1 -Config '.\board\config.json' -DryRun
+.\board\start.ps1 -Config '.\board\config.json'
+.\board\test.ps1 -Config '.\board\config.json'
+.\board\stop.ps1 -Config '.\board\config.json'
+```
+
+-BoardIP、-UserName、-Port、-BoardRoot、-Front、-Side 和 -XAuthority 可覆盖对应配置。-LocalOnly 检查本地源码目录与 SSH 命令，不连接板卡。
+
+## 运行环境
+
+通过 build/stage.py 装配源码，再提供模型、原生库、驱动、固件、角色和标定。应用启停检查匹配驱动，不自动替换位流。基础系统需具备 VART/XRT、图形环境和与内核匹配的模块。
+
+显式恢复命令使用 restore --command-file 指定配置文件；不依赖开发者机器上的固定路径。设备与驱动接口名在代码中保持一致，相关资产见 [资产说明](../report/assets.md)。

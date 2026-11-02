@@ -19,7 +19,7 @@ for x in records:
  path=ROOT/x['path']
  if path.suffix=='.py':ast.parse(path.read_text(),filename=x['path'])
 record('python_source_parse',True)
-hdl=json.loads((ROOT/'build/di46/sources.json').read_text())['files']
+hdl=json.loads((ROOT/'build/fpga/sources.json').read_text())['files']
 record('actual_hdl_inputs',len(hdl)==44 and all((ROOT/x['destination']).is_file() for x in hdl),files=len(hdl))
 for path in ROOT.glob('board/*.ps1'):
  for name in re.findall(r'([a-zA-Z0-9_-]+\.ps1)',path.read_text()):

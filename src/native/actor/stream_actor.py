@@ -8,8 +8,8 @@ from threading import Condition, Thread
 from time import monotonic,monotonic_ns
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent/'tail4_hdmi_candidate_20261030'),
-              str(HERE.parent/'tail4_preview_adapter_20261030')]
+sys.path[:0]=[str(HERE.parent/'preview'),
+              str(HERE.parent/'adapter')]
 from preview_adapter import TailHeads,identity_for
 from preview_runtime import empty_decoded
 from posepriv_coach.avatar_image_source import AvatarImageSource

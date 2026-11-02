@@ -5,10 +5,10 @@ import sys
 import cv2
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent/'tail4_hdmi_candidate_20261030'),
-              str(HERE.parent/'tail4_live_frontend_20261030'),
-              str(HERE.parent/'tail4_preview_adapter_20261030'),
-              str(HERE.parent/'tail4_stream_worker_20261030')]
+sys.path[:0]=[str(HERE.parent/'preview'),
+              str(HERE.parent/'frontend'),
+              str(HERE.parent/'adapter'),
+              str(HERE.parent/'stream')]
 from preview_runtime import AsyncDetector,PreviewGeometryBuilder,map_display_work,pose_backend
 from live_frontend import PoseDetector,alignment_roi,crop_rgb,Q7_RGB_LUT
 from preview_adapter import PreparedImage,decode
@@ -31,17 +31,17 @@ class StreamingPreviewModel:
                 timeout=cfg.get('tail4_worker_timeout',5))
         self.transport=transport
         if cropper is None and cfg.get('preview_roi_crop') is True:
-            sys.path.insert(0,str(HERE.parent/'tail4_crop_fast_20261030'))
+            sys.path.insert(0,str(HERE.parent/'crop'))
             from roi_crop import NativeRoiCropper
             cropper=NativeRoiCropper(cfg['tail4_roi_crop_library'],cfg['preview_roi_dma_fd'],
                 timeout_ms=cfg.get('tail4_roi_crop_timeout_ms',200))
         elif cropper is None and cfg.get('tail4_crop_library'):
-            sys.path.insert(0,str(HERE.parent/'tail4_crop_fast_20261030'))
+            sys.path.insert(0,str(HERE.parent/'crop'))
             from fast_crop import NativeCropper
             cropper=NativeCropper(cfg['tail4_crop_library'])
         self.cropper=cropper
         if decoder is None and cfg.get('tail4_decode_library'):
-            sys.path.insert(0,str(HERE.parent/'tail4_decode_native_20261030'))
+            sys.path.insert(0,str(HERE.parent/'decode'))
             from native_decoder import NativeDecoder
             decoder=NativeDecoder(cfg['tail4_decode_library']).decode
         self.decoder=decoder or decode

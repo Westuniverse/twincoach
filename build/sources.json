@@ -133,299 +133,299 @@
   },
   {
     "path": "src/native/hybrid/hybrid_pair_worker.cpp",
-    "runtime": "candidate/hybrid_stream_20261031/hybrid_pair_worker.cpp"
+    "runtime": "native/hybrid/hybrid_pair_worker.cpp"
   },
   {
     "path": "src/native/hybrid/pair_worker/compile_native.sh",
-    "runtime": "candidate/hybrid_stream_20261031/pair_worker/compile_native.sh"
+    "runtime": "native/hybrid/pair_worker/compile_native.sh"
   },
   {
     "path": "src/native/hybrid/pair_worker/pair_client.py",
-    "runtime": "candidate/hybrid_stream_20261031/pair_worker/pair_client.py"
+    "runtime": "native/hybrid/pair_worker/pair_client.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/camera_entry.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/camera_entry.py"
+    "runtime": "native/hybrid/stream_profile/camera_entry.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/check_source_closure.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/check_source_closure.py"
+    "runtime": "native/hybrid/stream_profile/check_source_closure.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/hybrid_entry.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_entry.py"
+    "runtime": "native/hybrid/stream_profile/hybrid_entry.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/hybrid_process.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_process.py"
+    "runtime": "native/hybrid/stream_profile/hybrid_process.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/hybrid_runtime.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_runtime.py"
+    "runtime": "native/hybrid/stream_profile/hybrid_runtime.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/hybrid_transport.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_transport.py"
+    "runtime": "native/hybrid/stream_profile/hybrid_transport.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/indexed_source.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/indexed_source.py"
+    "runtime": "native/hybrid/stream_profile/indexed_source.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/make_config.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/make_config.py"
+    "runtime": "native/hybrid/stream_profile/make_config.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/run_hybrid_preview.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/run_hybrid_preview.py"
+    "runtime": "native/hybrid/stream_profile/run_hybrid_preview.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/run_hybrid_replay.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/run_hybrid_replay.py"
+    "runtime": "native/hybrid/stream_profile/run_hybrid_replay.py"
   },
   {
     "path": "src/native/hybrid/stream_profile/run_indexed_replay.py",
-    "runtime": "candidate/hybrid_stream_20261031/stream_profile/run_indexed_replay.py"
+    "runtime": "native/hybrid/stream_profile/run_indexed_replay.py"
   },
   {
     "path": "src/native/client/combined_client.py",
-    "runtime": "candidate/tail4_combined_worker_20261030/combined_client.py"
+    "runtime": "native/client/combined_client.py"
   },
   {
     "path": "src/native/client/combined_protocol.py",
-    "runtime": "candidate/tail4_combined_worker_20261030/combined_protocol.py"
+    "runtime": "native/client/combined_protocol.py"
   },
   {
     "path": "src/native/crop/build_map.py",
-    "runtime": "candidate/tail4_crop_fast_20261030/build_map.py"
+    "runtime": "native/crop/build_map.py"
   },
   {
     "path": "src/native/crop/compile_neon_fast.sh",
-    "runtime": "candidate/tail4_crop_fast_20261030/compile_neon_fast.sh"
+    "runtime": "native/crop/compile_neon_fast.sh"
   },
   {
     "path": "src/native/crop/crop_map_q5.c",
-    "runtime": "candidate/tail4_crop_fast_20261030/crop_map_q5.c"
+    "runtime": "native/crop/crop_map_q5.c"
   },
   {
     "path": "src/native/crop/crop_q7.c",
-    "runtime": "candidate/tail4_crop_fast_20261030/crop_q7.c"
+    "runtime": "native/crop/crop_q7.c"
   },
   {
     "path": "src/native/crop/fast_crop.py",
-    "runtime": "candidate/tail4_crop_fast_20261030/fast_crop.py"
+    "runtime": "native/crop/fast_crop.py"
   },
   {
     "path": "src/native/crop/fast_frontend.py",
-    "runtime": "candidate/tail4_crop_fast_20261030/fast_frontend.py"
+    "runtime": "native/crop/fast_frontend.py"
   },
   {
     "path": "src/native/decode/compile_native.sh",
-    "runtime": "candidate/tail4_decode_native_20261030/compile_native.sh"
+    "runtime": "native/decode/compile_native.sh"
   },
   {
     "path": "src/native/decode/decode_leaf.cpp",
-    "runtime": "candidate/tail4_decode_native_20261030/decode_leaf.cpp"
+    "runtime": "native/decode/decode_leaf.cpp"
   },
   {
     "path": "src/native/decode/native_decoder.py",
-    "runtime": "candidate/tail4_decode_native_20261030/native_decoder.py"
+    "runtime": "native/decode/native_decoder.py"
   },
   {
     "path": "src/native/geometry/geometry_full33_process.py",
-    "runtime": "candidate/tail4_geometry_process_20261030/geometry_full33_process.py"
+    "runtime": "native/geometry/geometry_full33_process.py"
   },
   {
     "path": "src/native/preview/preview_runtime.py",
-    "runtime": "candidate/tail4_hdmi_candidate_20261030/preview_runtime.py"
+    "runtime": "native/preview/preview_runtime.py"
   },
   {
     "path": "src/native/frontend/live_frontend.py",
-    "runtime": "candidate/tail4_live_frontend_20261030/live_frontend.py"
+    "runtime": "native/frontend/live_frontend.py"
   },
   {
     "path": "src/native/gl/field_preview_gles_native.py",
-    "runtime": "candidate/tail4_native_gl_submit_20261031/field_preview_gles_native.py"
+    "runtime": "native/gl/field_preview_gles_native.py"
   },
   {
     "path": "src/native/gl/native_gl.py",
-    "runtime": "candidate/tail4_native_gl_submit_20261031/native_gl.py"
+    "runtime": "native/gl/native_gl.py"
   },
   {
     "path": "src/native/adapter/preview_adapter.py",
-    "runtime": "candidate/tail4_preview_adapter_20261030/preview_adapter.py"
+    "runtime": "native/adapter/preview_adapter.py"
   },
   {
     "path": "src/native/entry/_leased_process_clone.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/_leased_process_clone.py"
+    "runtime": "native/profile/entry/_leased_process_clone.py"
   },
   {
     "path": "src/native/entry/compile_head_batch.sh",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/compile_head_batch.sh"
+    "runtime": "native/profile/entry/compile_head_batch.sh"
   },
   {
     "path": "src/native/entry/compile_v2_math.sh",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/compile_v2_math.sh"
+    "runtime": "native/profile/entry/compile_v2_math.sh"
   },
   {
     "path": "src/native/entry/display_v2_bridge.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/display_v2_bridge.py"
+    "runtime": "native/profile/entry/display_v2_bridge.py"
   },
   {
     "path": "src/native/entry/fast_world_filter.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/fast_world_filter.py"
+    "runtime": "native/profile/entry/fast_world_filter.py"
   },
   {
     "path": "src/native/entry/field_preview_full33_split.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/field_preview_full33_split.py"
+    "runtime": "native/profile/entry/field_preview_full33_split.py"
   },
   {
     "path": "src/native/entry/geometry_full33_process.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/geometry_full33_process.py"
+    "runtime": "native/profile/entry/geometry_full33_process.py"
   },
   {
     "path": "src/native/entry/head_batch.c",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/head_batch.c"
+    "runtime": "native/profile/entry/head_batch.c"
   },
   {
     "path": "src/native/entry/image_lease.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/image_lease.py"
+    "runtime": "native/profile/entry/image_lease.py"
   },
   {
     "path": "src/native/entry/leased_pipeline.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/leased_pipeline.py"
+    "runtime": "native/profile/entry/leased_pipeline.py"
   },
   {
     "path": "src/native/entry/leased_stream_process.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/leased_stream_process.py"
+    "runtime": "native/profile/entry/leased_stream_process.py"
   },
   {
     "path": "src/native/entry/native_head_batch.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/native_head_batch.py"
+    "runtime": "native/profile/entry/native_head_batch.py"
   },
   {
     "path": "src/native/entry/native_v2_math.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/native_v2_math.py"
+    "runtime": "native/profile/entry/native_v2_math.py"
   },
   {
     "path": "src/native/entry/neutral_root_runtime.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/neutral_root_runtime.py"
+    "runtime": "native/profile/entry/neutral_root_runtime.py"
   },
   {
     "path": "src/native/entry/quality_capture.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/quality_capture.py"
+    "runtime": "native/profile/entry/quality_capture.py"
   },
   {
     "path": "src/native/entry/recovery_hook.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/recovery_hook.py"
+    "runtime": "native/profile/entry/recovery_hook.py"
   },
   {
     "path": "src/native/entry/roi_crop.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/roi_crop.py"
+    "runtime": "native/profile/entry/roi_crop.py"
   },
   {
     "path": "src/native/entry/roi_shared_fd.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/roi_shared_fd.py"
+    "runtime": "native/profile/entry/roi_shared_fd.py"
   },
   {
     "path": "src/native/entry/run_preview.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/run_preview.py"
+    "runtime": "native/profile/entry/run_preview.py"
   },
   {
     "path": "src/native/entry/run_replay.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/run_replay.py"
+    "runtime": "native/profile/entry/run_replay.py"
   },
   {
     "path": "src/native/entry/split_pipeline.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/split_pipeline.py"
+    "runtime": "native/profile/entry/split_pipeline.py"
   },
   {
     "path": "src/native/entry/torso_input_translate_head.py",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/torso_input_translate_head.py"
+    "runtime": "native/profile/entry/torso_input_translate_head.py"
   },
   {
     "path": "src/native/entry/v2_math.c",
-    "runtime": "candidate/tail4_public_profile_20261031/entry/v2_math.c"
+    "runtime": "native/profile/entry/v2_math.c"
   },
   {
     "path": "src/native/worker/compile_native.sh",
-    "runtime": "candidate/tail4_shm_worker_20261030/compile_native.sh"
+    "runtime": "native/worker/compile_native.sh"
   },
   {
     "path": "src/native/worker/posepriv_tail4_uapi.h",
-    "runtime": "candidate/tail4_shm_worker_20261030/posepriv_tail4_uapi.h"
+    "runtime": "native/worker/posepriv_tail4_uapi.h"
   },
   {
     "path": "src/native/worker/shm_client.py",
-    "runtime": "candidate/tail4_shm_worker_20261030/shm_client.py"
+    "runtime": "native/worker/shm_client.py"
   },
   {
     "path": "src/native/worker/shm_protocol.py",
-    "runtime": "candidate/tail4_shm_worker_20261030/shm_protocol.py"
+    "runtime": "native/worker/shm_protocol.py"
   },
   {
     "path": "src/native/worker/tail4_boundary.h",
-    "runtime": "candidate/tail4_shm_worker_20261030/tail4_boundary.h"
+    "runtime": "native/worker/tail4_boundary.h"
   },
   {
     "path": "src/native/worker/tail4_operator_regs.h",
-    "runtime": "candidate/tail4_shm_worker_20261030/tail4_operator_regs.h"
+    "runtime": "native/worker/tail4_operator_regs.h"
   },
   {
     "path": "src/native/worker/tail4_runtime.c",
-    "runtime": "candidate/tail4_shm_worker_20261030/tail4_runtime.c"
+    "runtime": "native/worker/tail4_runtime.c"
   },
   {
     "path": "src/native/worker/tail4_runtime.h",
-    "runtime": "candidate/tail4_shm_worker_20261030/tail4_runtime.h"
+    "runtime": "native/worker/tail4_runtime.h"
   },
   {
     "path": "src/native/worker/tail4_shm_worker.cpp",
-    "runtime": "candidate/tail4_shm_worker_20261030/tail4_shm_worker.cpp"
+    "runtime": "native/worker/tail4_shm_worker.cpp"
   },
   {
     "path": "src/native/worker/tail4_submit.h",
-    "runtime": "candidate/tail4_shm_worker_20261030/tail4_submit.h"
+    "runtime": "native/worker/tail4_submit.h"
   },
   {
     "path": "src/native/actor/stream_actor.py",
-    "runtime": "candidate/tail4_stream_preview_20261030/stream_actor.py"
+    "runtime": "native/actor/stream_actor.py"
   },
   {
     "path": "src/native/actor/stream_runtime.py",
-    "runtime": "candidate/tail4_stream_preview_20261030/stream_runtime.py"
+    "runtime": "native/actor/stream_runtime.py"
   },
   {
     "path": "src/native/process/completion_first.py",
-    "runtime": "candidate/tail4_stream_process_20261030/completion_first.py"
+    "runtime": "native/process/completion_first.py"
   },
   {
     "path": "src/native/process/jpeg_owner.py",
-    "runtime": "candidate/tail4_stream_process_20261030/jpeg_owner.py"
+    "runtime": "native/process/jpeg_owner.py"
   },
   {
     "path": "src/native/process/stream_process.py",
-    "runtime": "candidate/tail4_stream_process_20261030/stream_process.py"
+    "runtime": "native/process/stream_process.py"
   },
   {
     "path": "src/native/stream/stream_client.py",
-    "runtime": "candidate/tail4_stream_worker_20261030/stream_client.py"
+    "runtime": "native/stream/stream_client.py"
   },
   {
     "path": "src/native/filter/build.py",
-    "runtime": "candidate/tail4_world_filter_native_20261031/build.py"
+    "runtime": "native/filter/build.py"
   },
   {
     "path": "src/native/filter/world_filter.c",
-    "runtime": "candidate/tail4_world_filter_native_20261031/world_filter.c"
+    "runtime": "native/filter/world_filter.c"
   },
   {
     "path": "src/native/filter/world_filter.py",
-    "runtime": "candidate/tail4_world_filter_native_20261031/world_filter.py"
+    "runtime": "native/filter/world_filter.py"
   },
   {
     "path": "src/native/world/world_math.py",
-    "runtime": "candidate/tail4_world_math_20261031/world_math.py"
+    "runtime": "native/world/world_math.py"
   },
   {
     "path": "src/control/control.py",
@@ -448,12 +448,12 @@
     "runtime": "licenses/libjpeg-turbo-installed-copyright.txt"
   },
   {
-    "path": "report/licenses/tail4_live_frontend_20261030.sources.json",
-    "runtime": "licenses/tail4_live_frontend_20261030.sources.json"
+    "path": "report/licenses/frontend.sources.json",
+    "runtime": "licenses/frontend.sources.json"
   },
   {
-    "path": "report/licenses/tail4_preview_adapter_20261030.sources.json",
-    "runtime": "licenses/tail4_preview_adapter_20261030.sources.json"
+    "path": "report/licenses/adapter.sources.json",
+    "runtime": "licenses/adapter.sources.json"
   },
   {
     "path": "build/helpers/assemble_hdmi_playlist.py",
@@ -1484,32 +1484,16 @@
     "runtime": "windows/restore.ps1"
   },
   {
-    "path": "board/restore-p4.ps1",
-    "runtime": "windows/restore-p4.ps1"
-  },
-  {
     "path": "board/stop.ps1",
     "runtime": "windows/stop.ps1"
-  },
-  {
-    "path": "board/stop-run.ps1",
-    "runtime": "windows/stop-run.ps1"
   },
   {
     "path": "board/test.ps1",
     "runtime": "windows/test.ps1"
   },
   {
-    "path": "board/start-full.ps1",
-    "runtime": "windows/start-full.ps1"
-  },
-  {
     "path": "board/start.ps1",
     "runtime": "windows/start.ps1"
-  },
-  {
-    "path": "board/start-hybrid.ps1",
-    "runtime": "windows/start-hybrid.ps1"
   },
   {
     "path": "data/examples/squat.json",
@@ -1602,5 +1586,13 @@
   {
     "path": "src/drivers/posepriv_dma_proxy/posepriv_dma_binding.h",
     "runtime": "board_drivers/posepriv_dma_proxy/posepriv_dma_binding.h"
+  },
+  {
+    "path": "board/control.py",
+    "runtime": "windows/control.py"
+  },
+  {
+    "path": "board/config.example.json",
+    "runtime": "windows/config.example.json"
   }
 ]

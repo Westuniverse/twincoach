@@ -42,7 +42,7 @@ class WorldAvatarCache:
                     not report.get('all_geometry_inferred') or
                     report.get('frames')!=len(chapter.samples) or report.get('asset_binding')!=binding):
                 raise ValueError('world cache source/asset binding differs')
-            states=json.loads((folder/'states.private.json').read_text(encoding='utf-8'))
+            states=json.loads((folder/'states.json').read_text(encoding='utf-8'))
             n=len(chapter.samples)
             if len(states)!=n:raise ValueError('world cache state count differs')
             matrices=np.frombuffer((folder/'matrices.bin').read_bytes(),dtype='<i2').reshape(n,16,12)

@@ -86,5 +86,5 @@
       "tag": "v0.10.18"
     }
   ],
-  "reuse": "tail4_preview_adapter_20261030/upstream contains pose_detector_graph/ROI calculators/LICENSE"
+  "reuse": "adapter/upstream contains pose_detector_graph/ROI calculators/LICENSE"
 }

@@ -2,7 +2,7 @@
 
 No runtime imports, model downloads, or production PoseFrame conversion occur on
 module import. Raw SimCC responses are not calibrated keypoint probabilities.
-See docs/model_actions_reference_20261026.md for sources and experimental scope.
+Model references and usage scope are documented in report/third_party.md.
 """
 from __future__ import annotations
 

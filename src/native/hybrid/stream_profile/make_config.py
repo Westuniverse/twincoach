@@ -16,7 +16,7 @@ def main():
     cfg.update(preview_pose_backend='hybrid_full33_side_lightning_front',
         tail4_scoring_profile='hybrid_side_full33_front_lightning_raw17_v1',
         tail4_stream_capacity=4,
-        hybrid_package_root=a.package_root,hybrid_public_entry=str(Path(a.package_root)/'candidate/tail4_public_profile_20261031/entry'),
+        hybrid_package_root=a.package_root,hybrid_public_entry=str(Path(a.package_root)/'native/profile/entry'),
         hybrid_pair_worker=a.worker,hybrid_lightning_config=a.p4_config)
     Path(a.output).write_text(json.dumps(cfg,indent=2)+'\n')
 

@@ -52,9 +52,11 @@ sim/runtime.json
 .env
 .env.*
 # Original private build provenance; public BD and selected reports are separate
-build/di46/evidence/
-build/di46/joint/
-build/di46/qualified_export/
-build/di46/*.private.*
-build/di46/clone_validate_sc_ooc.tcl
-build/di46/export_qualified.tcl
+build/fpga/evidence/
+build/fpga/joint/
+build/fpga/qualified_export/
+build/fpga/*.private.*
+build/fpga/clone_validate_sc_ooc.tcl
+build/fpga/export_qualified.tcl
+# User-specific board connection settings
+board/config.json

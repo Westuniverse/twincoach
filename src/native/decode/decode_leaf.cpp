@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Copyright 2019-2023 The MediaPipe Authors; calculator math adaptation.
 // Derived from the pinned v0.10.18 calculator transcription in
-// ../tail4_preview_adapter_20261030/decoder_reference.cpp. No NN runtime.
+// ../adapter/decoder_reference.cpp. No NN runtime.
 #include <algorithm>
 #include <array>
 #include <cmath>

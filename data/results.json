@@ -1,6 +1,5 @@
 {
   "project": "TwinCoach",
-  "hardware": "di46ddr200_20261031",
   "mode": "dual_full33",
   "scope": "Actual recorded JPEG input, real dual Full33 inference and HDMI completion; not live-human or physical scanout qualification",
   "replay": {
@@ -39,5 +38,6 @@
     "Tail4": 200,
     "ROI_DMA_shared": 100
   },
-  "source": "Recorded JPEG benchmark and FPGA implementation reports."
+  "source": "Recorded JPEG benchmark and FPGA implementation reports.",
+  "platform": "AMD Kria KV260"
 }

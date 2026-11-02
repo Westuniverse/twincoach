@@ -12,6 +12,6 @@ command=['/usr/bin/gcc','-std=c11','-O3','-Wall','-Wextra','-Werror',
          '-o',str(here/'libposepriv_world_filter.so'),'-lm']
 if platform.machine()=='aarch64':command.insert(2,'-mcpu=cortex-a53')
 result=subprocess.run(command,capture_output=True,text=True)
-(here/'build.private.log').write_text(' '.join(command)+'\n'+result.stdout+result.stderr)
+(here/'build.log').write_text(' '.join(command)+'\n'+result.stdout+result.stderr)
 result.check_returncode()
 print(here/'libposepriv_world_filter.so')

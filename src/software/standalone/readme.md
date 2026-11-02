@@ -17,11 +17,11 @@
 构建命令：
 
 ```powershell
-& 'F:\vivado2026_1\2026.1\Vitis\bin\vitis.bat' `
+& (Join-Path $env:VITIS_HOME 'bin\vitis.bat') `
   -s scripts\vitis\build_standalone_dma_test.py
 ```
 
-Vitis 2026.1 已禁用 XSCT，因此构建脚本使用 Vitis Python API。为避开 Windows 对象路径限制，生成工作区为仓库根目录下的 `.v`，不提交 Git。
+构建脚本使用 Vitis Python API，工具路径由 VITIS_HOME 指定。为避开 Windows 对象路径限制，生成工作区为仓库根目录下的 `.v`，不提交 Git。
 
 构建产物：
 
@@ -62,7 +62,7 @@ POSEPRIV_DMA_TEST: PASS
 构建顺序：
 
 ```powershell
-& 'F:\vivado2026_1\2026.1\Vitis\bin\vitis.bat' `
+& (Join-Path $env:VITIS_HOME 'bin\vitis.bat') `
   -s scripts\vitis\build_standalone_avatar_dma_test.py
 
 powershell -ExecutionPolicy Bypass `
@@ -74,7 +74,7 @@ powershell -ExecutionPolicy Bypass `
 `build/boot/avatar_dma/BOOT.BIN`。JTAG 下载时使用：
 
 ```powershell
-& 'F:\vivado2026_1\2026.1\Vitis\bin\xsdb.bat' `
+& (Join-Path $env:VITIS_HOME 'bin\xsdb.bat') `
   scripts\vitis\run_avatar_dma_jtag.tcl
 ```
 
@@ -96,7 +96,7 @@ joint=5，view=1），PL 聚合后由 S2MM 返回一个摘要拍。软件逐位�
 `max=25`、`count=3` 以及 joint/view 元数据。
 
 ```powershell
-& 'F:\vivado2026_1\2026.1\Vitis\bin\vitis.bat' `
+& (Join-Path $env:VITIS_HOME 'bin\vitis.bat') `
   -s scripts\vitis\build_standalone_motion_stats_test.py
 
 powershell -ExecutionPolicy Bypass `

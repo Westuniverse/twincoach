@@ -34,21 +34,42 @@ python3 build/stage.py --output /tmp/twincoach-board --assets /absolute/path/to/
 
 完整资产要求及作用见 [资产说明](../report/assets.md)。需要编译 ARM 原生模块时，在匹配的 AArch64/VART/XRT 环境中使用装配目录各模块的 compile/build 脚本；Cortex-A53 参数保留。模型生成的 tail4_program.h 必须与 W/P、xmodel 和固件匹配。
 
-## 创建 di46 Vivado 工程
+## 创建 FPGA 工程
 
-准备 Vivado 2026.1、KV260 board files 和合法可用的工具/IP 许可；从原来源准备 DPU IP repository：
+准备与平台配置匹配的 Vivado、板卡文件和工具/IP 许可，以及 DPU IP repository：
 
 ```bash
 python3 build/create.py \
-  --output /tmp/twincoach-di46 \
-  --vivado /absolute/path/to/Vivado/2026.1/bin/vivado \
+  --output /tmp/twincoach-fpga \
+  --vivado /absolute/path/to/Vivado/bin/vivado \
   --dpu-repo /absolute/path/to/DPUCZDX8G_ip_repo_VAI_v3.0
 ```
 
-入口添加 `src/rtl/` 中 44 个实际 HDL 输入，重建 BD、validate、生成顶层 wrapper 并保存工程。增加 `--generate` 可生成 BD/IP 输出。`di46/inputs.tcl` 与 `di46/sources.json` 是实际来源清单，BD 导出脚本为 `di46/bd.tcl`。
+入口添加 `src/rtl/` 中 44 个实际 HDL 输入，重建 BD、validate、生成顶层 wrapper 并保存工程。增加 `--generate` 可生成 BD/IP 输出。`fpga/inputs.tcl` 与 `fpga/sources.json` 是实际来源清单，BD 导出脚本为 `fpga/bd.tcl`。
 
 工程创建结果见 sim/project.json，综合资源与时序见 [性能说明](../report/results.md)。工程创建、综合、实现与板端验证分别记录。
 
-## 可选运行产物
+## 平台配置
 
-runtime.py、restore.py 和 package.py 用于处理配套的运行产物与源码归档。使用这些工具需要自行准备对应输入；公开源码的基础测试和 stage.py 不依赖运行产物。
+默认平台由 data/platform.json 指定，包含器件、板卡定义和工具兼容要求。通过 --platform 指定其他配置文件。--vivado 和 --dpu-repo 始终由调用者指定，构建不依赖开发者安装路径。
+
+目标平台为 KV260。适配其他硬件还需要调整 BD 中的处理器、时钟、存储、约束和驱动接口；修改平台参数本身不会自动完成硬件移植。
+
+## 导入与装配检查
+
+```bash
+python3 -m pip install -r build/requirements.txt
+python3 /tmp/twincoach-runtime/native/hybrid/stream_profile/check_source_closure.py --package /tmp/twincoach-runtime
+```
+
+运行目录使用 native/actor、native/worker、native/profile/entry 等稳定名称，不含日期或实验后缀。源码、配置和资产目标路径共用 build/sources.json 与 build/assets.json。
+
+## 打包
+
+```bash
+python3 build/package.py --output /tmp/twincoach-src.tar.gz
+python3 build/runtime.py --output /tmp/twincoach-runtime.tar.gz --assets /absolute/path/to/assets.json
+```
+
+package.py 只打包 Git 管理的项目文件。runtime.py 根据源码与显式资产清单装配运行包，无需私有基线归档。
+

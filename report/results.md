@@ -28,7 +28,7 @@
 | 已布线网络 | 195423 / 195423 |
 | DRC 错误 / 警告 | 0 / 642 |
 
-DPU AXI/core 100 MHz，DPU 2x 与 Tail4 200 MHz，ROI/DMA/shared 100 MHz；DDR 交换与 HP0 出口 200 MHz。实现报告位于 build/di46/reports。
+DPU AXI/core 100 MHz，DPU 2x 与 Tail4 200 MHz，ROI/DMA/shared 100 MHz；DDR 交换与 HP0 出口 200 MHz。实现报告位于 build/fpga/reports。
 
 ## DDR 互连比较
 

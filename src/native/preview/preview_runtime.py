@@ -8,9 +8,9 @@ import sys
 from time import monotonic_ns
 
 HERE = Path(__file__).resolve().parent
-sys.path[:0] = [str(HERE.parent/'tail4_live_frontend_20261030'),
-                str(HERE.parent/'tail4_preview_adapter_20261030'),
-                str(HERE.parent/'tail4_combined_worker_20261030')]
+sys.path[:0] = [str(HERE.parent/'frontend'),
+                str(HERE.parent/'adapter'),
+                str(HERE.parent/'client')]
 from live_frontend import PoseDetector, LiveRoiFrontend, alignment_roi
 from preview_adapter import (TailHeads, identity_for, DecodedFull33)
 from posepriv_coach.avatar_image_source import AvatarImageSource
@@ -119,14 +119,14 @@ class Tail4PreviewModel:
         self.frontends={v:AsyncViewFrontend(self.detector)for v in VIEWS}
         self.native_cropper=None
         if cfg.get('tail4_crop_library'):
-            sys.path.insert(0,str(HERE.parent/'tail4_crop_fast_20261030'))
+            sys.path.insert(0,str(HERE.parent/'crop'))
             from fast_crop import NativeCropper
             from fast_frontend import FastBgrViewFrontend
             self.native_cropper=NativeCropper(cfg['tail4_crop_library'])
             self.frontends={v:FastBgrViewFrontend(self.detector,self.native_cropper)for v in VIEWS}
         self.native_decoder=None
         if cfg.get('tail4_decode_library'):
-            sys.path.insert(0,str(HERE.parent/'tail4_decode_native_20261030'))
+            sys.path.insert(0,str(HERE.parent/'decode'))
             from native_decoder import NativeDecoder
             self.native_decoder=NativeDecoder(cfg['tail4_decode_library'])
             for frontend in self.frontends.values():frontend.decoder=self.native_decoder

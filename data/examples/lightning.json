@@ -5,5 +5,5 @@
   "post_model": "PACKAGE_ROOT/model/lightning_post.tflite",
   "post_mapping": "PACKAGE_ROOT/config/lightning_post_mapping.json",
   "preview_native_post_library": "PACKAGE_ROOT/runtime/libmovenet_post_neon.so",
-  "preview_native_post_contract": "PACKAGE_ROOT/runtime/movenet_post_contract.private.npz"
+  "preview_native_post_contract": "PACKAGE_ROOT/runtime/movenet_post_contract.npz"
 }

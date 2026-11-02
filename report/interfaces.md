@@ -655,7 +655,7 @@ W为PE-major/group-minor的128bit词；四路bias48/shift5可乱序加载但必�
 连续特征组II1；first清累加、last形成四个rawS48，bias显式49位，加正半值后算术
 右移，最后S16饱和。raw192/post64/tag16共用valid/ready，反压稳定；配置等整个
 流水空。只清valid/control不清权重RAM。195输出49chunk，最后3有效+1dummy；
-16bit tag不是物理源ID/ns。独立PPA及I/O时序范围见full33_head4_20261030.md。
+16bit tag不是物理源ID/ns。独立PPA及I/O时序范围见 FPGA 实现报告。
 
 FULL33-INT8-RESIDUAL-0.1：两个128bit operand与pixel tag原子入队，四通道复用II4。
 signed8扩S16后按独立Qa/Qb/Qout做Add+Relu6，7bit输出limit不大于127；只实现

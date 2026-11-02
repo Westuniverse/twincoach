@@ -1,4 +1,4 @@
-# Actual di46 HDL sources.
+# TwinCoach FPGA HDL sources.
 set source_files [list \
     [file join $root {src/rtl/dpu_xrt_control_bridge.sv}] \
     [file join $root {src/rtl/dpu_xrt_control_bridge_bd.v}] \

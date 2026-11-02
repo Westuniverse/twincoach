@@ -1,0 +1,15 @@
+{
+  "host": "192.168.1.100",
+  "user": "ubuntu",
+  "root": "~/twincoach",
+  "port": 22,
+  "front": "/dev/video0",
+  "side": "/dev/video2",
+  "front_rotation": 90,
+  "side_rotation": 270,
+  "xauthority": "",
+  "mode": "full33",
+  "profile": "demo-overrides.json",
+  "swap_views": false,
+  "display": ":0"
+}

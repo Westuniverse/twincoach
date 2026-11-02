@@ -8,8 +8,8 @@ import sys
 import time
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent.parent/'tail4_stream_process_20261030'),
-              str(HERE.parent.parent/'tail4_hdmi_candidate_20261030')]
+sys.path[:0]=[str(HERE.parent.parent/'process'),
+              str(HERE.parent.parent/'preview')]
 import posepriv_coach.field_preview_geometry_process as base
 from posepriv_coach.field_preview_geometry import DISPLAY_SCORING
 from preview_runtime import PreviewGeometryBuilder
@@ -80,17 +80,17 @@ def run_geometry(sock,spec):
     channel=base._FramedSocket(sock);generation=0;installation=None;owner=None
     try:
         from posepriv_coach.native_world_math import install
-        installation=install(HERE.parents[2]/'runtime/libposepriv_world_math.public-20261031.so')
-        sys.path.insert(0,str(HERE.parent.parent/'tail4_world_filter_native_20261031'))
+        installation=install(HERE.parents[2]/'runtime/libposepriv_world_math.so')
+        sys.path.insert(0,str(HERE.parent.parent/'filter'))
         import preview_runtime
         from fast_world_filter import install as install_filter
-        install_filter(preview_runtime,HERE.parent.parent/'tail4_world_filter_native_20261031/libposepriv_world_filter.so')
+        install_filter(preview_runtime,HERE.parent.parent/'filter/libposepriv_world_filter.so')
         owner=build_full33_owner(spec)
         from posepriv_coach.native_world_metadata import make_world_metadata_builder
         owner.world.inferred_metadata_builder=make_world_metadata_builder(HERE.parents[2]/'runtime/libposepriv_world_metadata.so')
         from posepriv_coach.native_world_prepare import NativeWorldPlan
-        owner.world.initial_plan_builder=NativeWorldPlan(owner.world,HERE.parents[2]/'runtime/libposepriv_world_prepare.public-20261031.so')
-        (HERE/'world_filter_receipt.private.json').write_text(json.dumps(dict(stabilizer=type(owner.world_stabilizer).__name__,entry=str(HERE),display_v2=getattr(owner,'display_v2_receipt',None))))
+        owner.world.initial_plan_builder=NativeWorldPlan(owner.world,HERE.parents[2]/'runtime/libposepriv_world_prepare.so')
+        (HERE/'world_filter_receipt.json').write_text(json.dumps(dict(stabilizer=type(owner.world_stabilizer).__name__,entry=str(HERE),display_v2=getattr(owner,'display_v2_receipt',None))))
         channel.send(dict(schema=base.VERSION,kind='ready'),time.monotonic()+5)
         while True:
             try:request=channel.receive(time.monotonic()+.05)
@@ -119,7 +119,7 @@ def run_geometry(sock,spec):
             recorder=getattr(owner,'quality_capture',None)
             if recorder is not None:recorder.close()
         if installation is not None:
-            (HERE/'world_math_calls.private.json').write_text(json.dumps(installation.module.stats(),indent=2)+'\n')
+            (HERE/'world_math_calls.json').write_text(json.dumps(installation.module.stats(),indent=2)+'\n')
             installation.restore()
         sock.close()
 

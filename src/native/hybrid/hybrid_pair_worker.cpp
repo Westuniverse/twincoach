@@ -2,7 +2,7 @@
 // Component-only pair boundary. Reuse the exact qualified Full33 Backend/Slot
 // and its prefix/cut copy + Tail35 raw extraction; do not instantiate its server.
 #define main frozen_tail4_shm_worker_main
-#include "../tail4_shm_worker_20261030/tail4_shm_worker.cpp"
+#include "../worker/tail4_shm_worker.cpp"
 #undef main
 #include <algorithm>
 #include <future>

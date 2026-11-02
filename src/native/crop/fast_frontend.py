@@ -5,7 +5,7 @@ import sys
 import cv2
 import numpy as np
 
-sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'tail4_hdmi_candidate_20261030'))
+sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'preview'))
 from preview_runtime import AsyncViewFrontend
 from live_frontend import alignment_roi
 from preview_adapter import PreparedImage

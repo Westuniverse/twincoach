@@ -13,11 +13,11 @@
 ```mermaid
 flowchart LR
     A[双摄 MJPEG 输入] --> B[ARM 采集、解码与裁剪]
-    B --> C[B3136 DPU]
-    C --> D[自研 PL Tail4/Tail35]
+    B --> C[DPU]
+    C --> D[自研 PL 姿态后段]
     D --> E[双路 33 点姿态]
     E --> F[几何、动作状态与评分]
-    E --> G[骨矩阵与 PPS4 PL 蒙皮]
+    E --> G[骨矩阵与 PL 蒙皮]
     G --> H[Mali 绘制与合成]
     F --> H
     H --> I[HDMI 画面与指导建议]
@@ -31,10 +31,10 @@ flowchart LR
 | 执行位置 | 职责 | 实现入口 |
 | --- | --- | --- |
 | ARM/Linux | 采集、解码调度、会话与资源管理 | src/host、src/native |
-| B3136 DPU | 姿态网络前段推理 | 外部 DPU IP 与匹配模型 |
-| 自研 PL Tail4/Tail35 | 网络后段计算、DDR 特征搬运与控制 | src/rtl/tail4_*、tensor_*、head4_* |
+| DPU | 姿态网络前段推理 | 外部 DPU IP 与匹配模型 |
+| 自研 PL 姿态后段 | 网络后段计算、DDR 特征搬运与控制 | src/rtl/tail4_*、tensor_*、head4_* |
 | ARM | 双视角几何、动作状态、规范度评分与骨矩阵 | src/host/posepriv_coach |
-| PPS4 PL | 共享加速与数字人蒙皮 | shared_pose_accel_axis*、vertex_skinning_serial_axis |
+| PL | 共享加速与数字人蒙皮 | shared_pose_accel_axis*、vertex_skinning_serial_axis |
 | Mali | 光栅化、绘制与画面合成 | src/native、src/render |
 | PC | SSH 控制与自检 | board/ |
 
@@ -42,7 +42,7 @@ PL 包含 ROI/DMA 接口，软件通过 preview_roi_crop 选择是否使用该�
 
 ## FPGA 与接口
 
-目标器件为 xck26-sfvc784-2LV-c。src/rtl 包含工程引用的 44 个 HDL 输入，清单位于 build/di46/sources.json。
+目标器件为 xck26-sfvc784-2LV-c。src/rtl 包含工程引用的 44 个 HDL 输入，清单位于 build/fpga/sources.json。
 
 Tail4 提供 AXI4-Lite 控制、AXI 数据访问、低有效复位与电平中断。tensor_axi128_read/write 组织 128 位数据搬运；共享加速模块通过 AXI stream 与 DMA 连接。驱动中的 UAPI 定义 ioctl、缓冲区所有权与完成语义。
 

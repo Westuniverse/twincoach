@@ -11,13 +11,13 @@ import sys
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--package',type=Path,required=True);a=p.parse_args()
-    package=a.package.resolve();candidate=package/'candidate';entry=candidate/'tail4_public_profile_20261031/entry'
-    profile=candidate/'hybrid_stream_20261031'
-    for name in ('src','scripts','board_tests','candidate'):
+    package=a.package.resolve();native=package/'native';entry=native/'profile/entry'
+    profile=native/'hybrid'
+    for name in ('src','scripts','board_tests','native'):
         if(package/name).is_symlink():raise ValueError('source directory must be a real copy: '+name)
     sys.path[:0]=[str(package/'src'),str(profile/'stream_profile'),str(profile/'pair_worker'),str(entry)]+[
-        str(candidate/n)for n in ('tail4_native_gl_submit_20261031','tail4_world_math_20261031',
-            'tail4_stream_preview_20261030','tail4_stream_process_20261030','tail4_geometry_process_20261030')]
+        str(native/n)for n in ('gl','world',
+            'actor','process','geometry')]
     import posepriv_coach
     posepriv_coach.__path__.insert(0,str(entry))
     modules={}

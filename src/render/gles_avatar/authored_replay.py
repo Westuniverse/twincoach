@@ -62,14 +62,14 @@ class AuthoredReplay:
             original = json.loads((source/'report.json').read_text(encoding='utf-8'))
             n = original['frames']
             if any(not all(row['matrix_valid'][:13]) for row in json.loads(
-                    (source/'states.private.json').read_text(encoding='utf-8'))):
+                    (source/'states.json').read_text(encoding='utf-8'))):
                 raise ValueError('authored display requires complete inferred source render palettes')
             if (report.get('schema_version') != 1 or report.get('scope') != 'host_authored_rig_preview' or
                     report.get('global_bones') != list(self.names) or report.get('frames') != n or
                     report.get('original_world_report') != original or
                     not report.get('all_geometry_inferred') or report.get('source_schedule') != 'latest-raw'):
                 raise ValueError('authored cache bone order and exact original world report required')
-            for a, b in (('driver_matrices.bin','matrices.bin'),('states.private.json','states.private.json'),('display.bin','display.bin')):
+            for a, b in (('driver_matrices.bin','matrices.bin'),('states.json','states.json'),('display.bin','display.bin')):
                 if (folder/a).read_bytes() != (source/b).read_bytes():
                     raise ValueError('authored cache driver/state/display bytes differ from world cache')
             raw = (folder/'matrices.bin').read_bytes()

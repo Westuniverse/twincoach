@@ -21,4 +21,4 @@ SmartConnect 内部交换时钟通过 SW0 的 ASSOCIATED_CLK 指向 aclk1。仅�
 
 200 MHz 互连配置使用 78404 LUT、115916 FF、139 BRAM36 等效、655 DSP、64 URAM。实现的 setup 裕量为 +0.017 ns、hold 裕量为 +0.008 ns，TNS/THS 为 0；195423 个网络全部完成布线，DRC 错误为 0、警告为 642。
 
-综合数据见 [性能说明](results.md)，实现报告位于 build/di46/reports。
+综合数据见 [性能说明](results.md)，实现报告位于 build/fpga/reports。

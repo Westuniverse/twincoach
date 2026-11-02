@@ -57,12 +57,12 @@ def main():
     LivePreview=load_preview(args)
     records=load_records(args.input);first=records[0].timestamp_ns
     plan=Schedule(records,duration_ns=None if args.duration is None else int(round(args.duration*1_000_000_000)))
-    schedule_path=args.schedule or args.output.with_name(args.output.stem+'.schedule.private.jsonl')
+    schedule_path=args.schedule or args.output.with_name(args.output.stem+'.schedule.jsonl')
     preview_config=args.config
     if args.presentation_capacity is not None:
         if args.presentation_capacity<1:raise ValueError('positive presentation capacity required')
         configured=json.loads(args.config.read_text());configured['benchmark_presentation_capacity']=args.presentation_capacity
-        preview_config=args.output.with_name(args.output.stem+'.indexed-config.private.json')
+        preview_config=args.output.with_name(args.output.stem+'.indexed-config.json')
         preview_config.write_text(json.dumps(configured,indent=2)+'\n')
     stop=threading.Event();received=[];client_errors=[];poll_seen=set()
     front_rotation,side_rotation=args.front_rotation,args.side_rotation

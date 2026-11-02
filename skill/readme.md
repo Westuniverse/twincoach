@@ -26,7 +26,7 @@ GPU 完成与屏幕扫描具有不同计时边界。源身份被重用时应加�
 
 ## 源码与运行目录映射
 
-运行目录由 [sources.json](../build/sources.json) 描述，Vivado 输入由 [HDL 清单](../build/di46/sources.json) 描述。装配工具依据映射收集源码，保留模块、ABI 和运行路径的对应关系。
+运行目录由 [sources.json](../build/sources.json) 描述，Vivado 输入由 [HDL 清单](../build/fpga/sources.json) 描述。装配工具依据映射收集源码，保留模块、ABI 和运行路径的对应关系。
 
 ```bash
 python3 build/stage.py --output /tmp/twincoach-runtime

@@ -9,8 +9,8 @@ import tempfile
 from time import monotonic
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent/'tail4_combined_worker_20261030'),
-              str(HERE.parent/'tail4_stream_worker_20261030')]
+sys.path[:0]=[str(HERE.parent/'client'),
+              str(HERE.parent/'stream')]
 from combined_client import CombinedWorker,worker_environment
 from stream_client import StreamCombinedWorker as PipeStreamWorker
 from posepriv_coach.movenet_cnn_worker import MoveNetCnnWorkerError

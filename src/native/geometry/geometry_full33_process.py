@@ -6,8 +6,8 @@ import sys
 import time
 
 HERE=Path(__file__).resolve().parent
-sys.path[:0]=[str(HERE.parent/'tail4_stream_process_20261030'),
-              str(HERE.parent/'tail4_hdmi_candidate_20261030')]
+sys.path[:0]=[str(HERE.parent/'process'),
+              str(HERE.parent/'preview')]
 import posepriv_coach.field_preview_geometry_process as base
 from posepriv_coach.field_preview_geometry import DISPLAY_SCORING
 from preview_runtime import PreviewGeometryBuilder

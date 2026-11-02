@@ -9,5 +9,11 @@ jobs:
         run: PYTHONDONTWRITEBYTECODE=1 python3 build/check.py
       - name: Stage runtime sources without private assets
         run: python3 build/stage.py --output /tmp/twincoach-stage
+      - name: Install host import dependencies
+        run: python3 -m pip install -r build/requirements.txt
+      - name: Check staged runtime imports
+        run: python3 /tmp/twincoach-stage/native/hybrid/stream_profile/check_source_closure.py --package /tmp/twincoach-stage
+      - name: Check configurable board control without connecting
+        run: python3 board/control.py start --host example-board --root '~/twincoach demo' --dry-run
       - name: Run the synthetic metrics example
         run: python3 skill/metrics.py data/examples/metrics.csv --start 0 --end 2

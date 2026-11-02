@@ -14,7 +14,7 @@ expand_package=control.expand_package
 
 
 def main():
-    control.ENTRY=ROOT/'candidate/hybrid_stream_20261031/stream_profile/camera_entry.py'
+    control.ENTRY=ROOT/'native/hybrid/stream_profile/camera_entry.py'
     argv=list(sys.argv)
     if len(argv)>1 and argv[1]=='start':
         control.STATE.mkdir(exist_ok=True)
