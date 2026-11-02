@@ -8,6 +8,7 @@
 | MediaPipe v0.10.18 算法参考 | ROI、热图与姿态坐标等算法依据 | Apache-2.0，固定来源登记在相关 sources.json 与 licenses/ 中 |
 | libjpeg-turbo | 原生 JPEG 解码链接依赖 | 沿已安装库的 IJG/BSD/zlib 等原许可，相关声明在 licenses/ |
 | NumPy、OpenCV、LiteRT/VART/XRT | 板端数值、图像、推理运行环境 | 由各自官方来源及其版本许可管理，非本仓库原创 |
+| PYNQ（可选） | 通用技能的 Overlay、连续缓冲与 simple DMA 后端 | [Xilinx/PYNQ](https://github.com/Xilinx/PYNQ)，BSD-3-Clause；仅选择硬件后端时需要，仓库不包含其源码或安装包 |
 | 角色 mesh、模型、标定和数据 | 部署所需资产 | 按各自来源授权，未包含在公开仓库 |
 
 Python 包名 posepriv_coach 与硬件标识属于接口名称，用于连接应用、驱动和固件。

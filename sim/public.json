@@ -66,6 +66,24 @@
       "check": "document_link",
       "passed": true,
       "document": "readme.md",
+      "target": "skill/pynq-pipeline/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "skill/pipeline-metrics/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "skill/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
       "target": "board/readme.md"
     },
     {
@@ -163,6 +181,222 @@
       "passed": true,
       "document": "report/results.md",
       "target": "ddr.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/development.md",
+      "target": "../skill/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/development.md",
+      "target": "../skill/pynq-pipeline/references/architecture.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/development.md",
+      "target": "../skill/pynq-pipeline/references/validation.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/development.md",
+      "target": "collaboration.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pipeline-metrics/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/metrics.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pynq-pipeline/references/architecture.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pynq-pipeline/references/contract.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pynq-pipeline/scripts/backends.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../sim/test_skill.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pynq-pipeline/scripts/report.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pipeline-metrics/references/protocol.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../sim/test_metrics.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../build/check.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../sim/public.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pynq-pipeline/references/prompts.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/collaboration.md",
+      "target": "../skill/pynq-pipeline/references/validation.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "pynq-pipeline/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "pipeline-metrics/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "pynq-pipeline/references/architecture.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "pynq-pipeline/references/validation.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "pynq-pipeline/references/failures.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "pynq-pipeline/references/prompts.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/readme.md",
+      "target": "../report/collaboration.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pipeline-metrics/SKILL.md",
+      "target": "references/protocol.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/architecture.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/contract.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/workflow.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/porting.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/failures.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/validation.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/SKILL.md",
+      "target": "references/prompts.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/references/validation.md",
+      "target": "../../../sim/skill.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/references/validation.md",
+      "target": "workflow.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/references/validation.md",
+      "target": "../../pipeline-metrics/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "skill/pynq-pipeline/references/workflow.md",
+      "target": "failures.md"
     },
     {
       "check": "host_tests",

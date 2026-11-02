@@ -1,0 +1,10 @@
+{
+  "schema": "stream-contract-v1",
+  "name": "stream-copy",
+  "operation": "identity",
+  "dma": "axi_dma_0",
+  "dtype": "uint32",
+  "count": 8,
+  "word_bytes": 4,
+  "max_bytes": 4096
+}

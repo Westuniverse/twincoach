@@ -1,0 +1,17 @@
+{
+  "schema": "stream-contract-v1",
+  "name": "signed-affine",
+  "operation": "affine",
+  "dma": "io/stream_dma",
+  "dtype": "int16",
+  "count": 6,
+  "word_bytes": 4,
+  "max_bytes": 4096,
+  "parameters": {"scale": 3, "bias": -2},
+  "control": {
+    "ip": "compute/affine",
+    "identity": {"offset": 60, "value": 1095124558},
+    "writes": [{"offset": 16, "parameter": "scale"}, {"offset": 24, "parameter": "bias"}],
+    "start": {"offset": 0, "value": 1}
+  }
+}

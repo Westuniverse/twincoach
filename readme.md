@@ -73,6 +73,12 @@ python3 build/stage.py --output /tmp/twincoach-runtime
 
 这是录制 JPEG 输入、实际双路姿态推理及 GPU/HDMI 完成确认的结果；不作为持续真人识别帧率或物理屏幕延迟。公开汇总见 [data/results.json](data/results.json)。综合资源与时序见 FPGA 实现报告。
 
+## 可复用技能
+
+技能包包含两个可独立复制的标准 Skill：[PYNQ 数据通路](skill/pynq-pipeline/SKILL.md) 与 [流水线性能分析](skill/pipeline-metrics/SKILL.md)。前者提供 Overlay/IP/DMA 契约、软件与硬件后端、独立黄金比对及报告；后者按源身份统计完成吞吐、源龄和确认间隔。
+
+[技能架构](skill/readme.md) 说明控制流、数据流与证据流，并提供无板卡样例、跨任务适配、失败诊断和验证范围。软件验证不需要安装 PYNQ；硬件后端使用调用者提供的匹配 bit/HWH。
+
 ## 部署与适配
 
 Windows、Linux 和 macOS 共用 Python 控制入口：

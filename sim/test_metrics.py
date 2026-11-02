@@ -19,4 +19,20 @@ class MetricTests(unittest.TestCase):
         self.assertEqual(result['p95_source_age_ms'],200)
         self.assertEqual(result['max_confirmation_gap_ms'],700)
 
+    def test_invalid_window_and_clock(self):
+        rows=[{'id':'a','source_ns':10,'done_ns':5}]
+        for start,end in [(0,0),(2,1),(0,float('inf'))]:
+            with self.subTest(window=(start,end)),self.assertRaises(ValueError):
+                metrics.measure(rows,0,start,end)
+        with self.assertRaisesRegex(ValueError,'clock domain'):
+            metrics.measure(rows,0,0,1)
+
+    def test_duplicate_before_window_is_not_new(self):
+        rows=[{'id':('A','a'),'source_ns':0,'done_ns':100_000_000},
+              {'id':('A','a'),'source_ns':0,'done_ns':1_100_000_000},
+              {'id':('B','a'),'source_ns':1_000_000_000,'done_ns':1_200_000_000}]
+        result=metrics.measure(rows,0,1,2)
+        self.assertEqual(result['fresh_outputs'],1)
+        self.assertEqual(result['p95_source_age_ms'],200)
+
 if __name__=='__main__':unittest.main()

@@ -25,7 +25,10 @@ for path in ROOT.glob('board/*.ps1'):
  for name in re.findall(r'([a-zA-Z0-9_-]+\.ps1)',path.read_text()):
   record('control_reference',(path.parent/name).is_file(),script=path.name,target=name)
 # Current public documents use explicit links; historical records remain separately labelled.
-for name in ['readme.md','build/readme.md','report/design.md','report/results.md','report/assets.md','report/third_party.md']:
+documents=[ROOT/name for name in ['readme.md','build/readme.md','report/design.md','report/results.md','report/assets.md','report/third_party.md','report/development.md','report/collaboration.md']]
+documents.extend((ROOT/'skill').rglob('*.md'))
+for path in documents:
+ name=str(path.relative_to(ROOT))
  path=ROOT/name
  for target in re.findall(r'\]\(([^)]+)\)',path.read_text()):
   if '://' not in target and not target.startswith('#'):

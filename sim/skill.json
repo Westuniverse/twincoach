@@ -1,0 +1,90 @@
+{
+  "scope": "Executed software examples; no PYNQ device or hardware performance validation",
+  "examples": [
+    {
+      "case": "stream-copy",
+      "backend": "mock",
+      "hardware_executed": false,
+      "passed": true,
+      "dtype": "uint32",
+      "elements": 8,
+      "bytes": 32,
+      "expected": [
+        0,
+        1,
+        255,
+        256,
+        65535,
+        65536,
+        2147483648,
+        4294967295
+      ],
+      "actual": [
+        0,
+        1,
+        255,
+        256,
+        65535,
+        65536,
+        2147483648,
+        4294967295
+      ],
+      "differences": [],
+      "events": [
+        "configure",
+        "receive_submit",
+        "kernel_start",
+        "send_submit",
+        "send_complete",
+        "receive_complete",
+        "release"
+      ]
+    },
+    {
+      "case": "signed-affine",
+      "backend": "mock",
+      "hardware_executed": false,
+      "passed": true,
+      "dtype": "int16",
+      "elements": 6,
+      "bytes": 12,
+      "expected": [
+        -8,
+        -5,
+        -2,
+        1,
+        298,
+        -302
+      ],
+      "actual": [
+        -8,
+        -5,
+        -2,
+        1,
+        298,
+        -302
+      ],
+      "differences": [],
+      "events": [
+        "configure",
+        "receive_submit",
+        "kernel_start",
+        "send_submit",
+        "send_complete",
+        "receive_complete",
+        "release"
+      ]
+    }
+  ],
+  "synthetic_trace": {
+    "window_s": [
+      0.0,
+      2.0
+    ],
+    "fresh_outputs": 4,
+    "fresh_outputs_per_s": 2.0,
+    "p95_source_age_ms": 300.0,
+    "max_confirmation_gap_ms": 700.0,
+    "p95_method": "sorted[floor(.95*(n-1))]"
+  }
+}
