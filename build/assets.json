@@ -16,7 +16,7 @@
       "destination": "model/model.W.bin",
       "required": true,
       "board_location_hint": "model/model.W.bin",
-      "provenance": "Same frozen Full model and exact Tail4 packing"
+      "provenance": "Same matching Full model and exact Tail4 packing"
     },
     {
       "role": "tail_parameters",
@@ -24,7 +24,7 @@
       "destination": "model/model.P.bin",
       "required": true,
       "board_location_hint": "model/model.P.bin",
-      "provenance": "Same frozen Tail4 program/weights pairing"
+      "provenance": "Same matching Tail4 program/weights pairing"
     },
     {
       "role": "detector",
@@ -41,7 +41,7 @@
       "required": true,
       "executable": true,
       "board_location_hint": "candidate/tail4_shm_worker_20261030/tail4_shm_worker",
-      "provenance": "Project GPL-2.0-only; exact frozen source included"
+      "provenance": "Project GPL-2.0-only; exact source included"
     },
     {
       "role": "xclbin",
@@ -185,7 +185,7 @@
       "kind": "file: exact model/PL/ARM artifact handoff manifest and license references",
       "destination": "licenses/artifact_handoff.private.json",
       "required": true,
-      "provenance": "Root supplies actual frozen build and model origin records; no invented identifiers"
+      "provenance": "Root supplies actual matching build and model origin records; no invented identifiers"
     },
     {
       "role": "jpeg_decode",
@@ -197,7 +197,7 @@
     },
     {
       "role": "tail_program_header",
-      "kind": "Frozen model-derived Tail35 dispatch schedule header, private model artifact",
+      "kind": "Model-derived Tail35 dispatch schedule header, private model artifact",
       "destination": "candidate/tail4_shm_worker_20261030/tail4_program.h",
       "required": true,
       "provenance": "Exact model-derived schedule matching prefix/W/P and the native worker; shapes/fix points/offsets kept with private model artifacts rather than public Git"
@@ -208,7 +208,7 @@
       "destination": "runtime/libposepriv_crop_map.so",
       "required": false,
       "board_location_hint": "runtime/libposepriv_crop_map.so",
-      "provenance": "Project GPL-2.0-only; crop_map_q5.c includes adjacent frozen crop_q7.c; optional ROI1 mode only, source staging timing is not hardware crop speed"
+      "provenance": "Project GPL-2.0-only; crop_map_q5.c includes adjacent crop_q7.c; optional ROI1 mode only, source staging timing is not hardware crop speed"
     },
     {
       "role": "jpeg_license",

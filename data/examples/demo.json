@@ -1,5 +1,5 @@
 {
-  "description": "Generic Full33 display defaults; the frozen runtime supplies its private calibrated V2 profile explicitly.",
+  "description": "Generic Full33 display defaults; the runtime supplies its private calibrated V2 profile explicitly.",
   "config": {
     "benchmark_presentations": true,
     "benchmark_presentation_capacity": 32768,

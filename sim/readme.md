@@ -1,10 +1,18 @@
 # 验证
 
-`python3 build/check.py` 检查公开源码映射、英文路径、控制脚本引用、Python 解析，并运行 sim/ 的功能测试。基础测试使用标准库，不需要板卡和模型。
+```bash
+python3 build/check.py
+python3 -m unittest discover -s sim -p 'test_*.py' -v
+```
 
-- test_coach.py：10 项完成建议、观测失效、方向区分与进程传递测试。
-- test_metrics.py：固定窗口的重复源与边界样例；测试数据明确标为合成。
-- public.json：本次公开快照的检查结果。
-- project.json：Vivado 2026.1 新目录工程创建及 BD 校验结果，区别于原综合/实现结果。
+基础功能测试使用 Python 标准库，不需要开发板或模型。
 
-原冻结的资源和回放统计保存在 data/results.json。历史 3994 项主机测试及 77 个 RTL 目标属于原工程验证记录，不计为此公开快照新跑的测试数量。
+| 文件 | 覆盖范围 |
+| --- | --- |
+| test_coach.py | 建议保持、观测失效、方向区分与进程传递，共 10 项测试 |
+| test_metrics.py | 重复源、统计窗口边界与源龄计算 |
+| rtl.json、rtl/ | 向量指标、关节指标和仿射变换的 RTL 自检配置与测试平台 |
+| public.json | 源码映射、Python 解析、控制引用、文档链接与主机测试结果 |
+| project.json | Vivado 工程创建、BD 校验与 wrapper 创建结果 |
+
+[性能数据](../data/results.json) 和 build/di46/reports 提供 FPGA 资源及链路测量依据。工程创建成功表示工程输入和 BD 可用，资源及时序以实现报告为准。

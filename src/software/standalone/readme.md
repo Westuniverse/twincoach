@@ -1,6 +1,6 @@
 # KV260 裸机自检程序
 
-这里的程序用于把 PS—DDR—AXI DMA—PL 算子—AXI DMA—DDR 链路单独调通，暂时不承载摄像头、姿态模型或最终界面。
+这里的程序用于把 PS—DDR—AXI DMA—PL 算子—AXI DMA—DDR 链路单独调通，不承载摄像头、姿态模型或最终界面。
 
 `posepriv_dma_test/main.c` 使用轮询模式：
 
@@ -23,7 +23,7 @@
 
 Vitis 2026.1 已禁用 XSCT，因此构建脚本使用 Vitis Python API。为避开 Windows 对象路径限制，生成工作区为仓库根目录下的 `.v`，不提交 Git。
 
-当前已验证生成：
+构建产物：
 
 ```text
 .v/dma_test/build/dma_test.elf
@@ -50,7 +50,7 @@ STEADY: 64-byte transaction, iterations=64, min_ticks=<实测值>, total_ticks=<
 POSEPRIV_DMA_TEST: PASS
 ```
 
-解析器使用 `total_ticks / iterations` 计算稳态平均值；不要把最小值单独当成系统可持续性能。工具链问题和解决方法见 [`docs/vitis_2026_1_troubleshooting.md`](../../docs/vitis_2026_1_troubleshooting.md)。
+解析器使用 `total_ticks / iterations` 计算稳态平均值；不要把最小值单独当成系统可持续性能。工具链问题和解决方法见 `docs/vitis_2026_1_troubleshooting.md`。
 
 ## 头像蒙皮 DMA 自检
 
@@ -105,6 +105,6 @@ powershell -ExecutionPolicy Bypass `
 
 输出为 `.v_motion_stats/motion_stats_dma_test/build/motion_stats_dma_test.elf` 和
 `build/boot/motion_stats_dma/BOOT.BIN`。JTAG、SD 卡和串口验收步骤见
-[`docs/kv260_motion_stats_board_test.md`](../../docs/kv260_motion_stats_board_test.md)。
+`docs/kv260_motion_stats_board_test.md`。
 必须看到 `POSEPRIV_MOTION_STATS_DMA_TEST: PASS` 才算板端闭环通过；单独生成 XSA、
 bitstream 或 ELF 只能算离线构建证据。

@@ -1,6 +1,5 @@
 {
   "project": "TwinCoach",
-  "date": "2026-10-31",
   "hardware": "di46ddr200_20261031",
   "mode": "dual_full33",
   "scope": "Actual recorded JPEG input, real dual Full33 inference and HDMI completion; not live-human or physical scanout qualification",
@@ -40,5 +39,5 @@
     "Tail4": 200,
     "ROI_DMA_shared": 100
   },
-  "source": "Selected frozen benchmark records; original tensor/weights/firmware unchanged."
+  "source": "Recorded JPEG benchmark and FPGA implementation reports."
 }

@@ -1,5 +1,5 @@
 {
-  "description": "Generic quality entry; replace with the explicit private display/calibration profile when assembling the frozen runtime.",
+  "description": "Generic quality entry; replace with the explicit private display/calibration profile when assembling the runtime.",
   "config": {
     "benchmark_presentations": true,
     "benchmark_presentation_capacity": 32768,

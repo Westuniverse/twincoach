@@ -2,7 +2,7 @@
 
 ## 源码与主机验证
 
-Python 3.12 可运行当前装配工具和基础测试：
+Python 3.12 可运行装配工具和基础测试：
 
 ```bash
 python3 build/check.py
@@ -45,10 +45,10 @@ python3 build/create.py \
   --dpu-repo /absolute/path/to/DPUCZDX8G_ip_repo_VAI_v3.0
 ```
 
-入口添加 `src/rtl/` 中 44 个实际 HDL 输入，重建 BD、validate、生成顶层 wrapper 并保存工程。增加 `--generate` 可生成 BD/IP 输出。`di46/inputs.tcl` 与 `di46/sources.json` 是实际来源清单，BD 导出脚本位于 `di46/evidence/`。
+入口添加 `src/rtl/` 中 44 个实际 HDL 输入，重建 BD、validate、生成顶层 wrapper 并保存工程。增加 `--generate` 可生成 BD/IP 输出。`di46/inputs.tcl` 与 `di46/sources.json` 是实际来源清单，BD 导出脚本为 `di46/bd.tcl`。
 
-2026-11-02 已在全新目录执行并得到 `POSEPRIV_DI46_PROJECT_CREATED`，Vivado exit 0；该验证止于工程创建与 BD 校验。历史选中 di46 的综合/布线资源与时序见 [结果说明](../report/results.md)。重新综合和实现需要在目标环境继续执行，不能用 BD 创建成功代替时序结果。
+工程创建结果见 sim/project.json，综合资源与时序见 [性能说明](../report/results.md)。工程创建、综合、实现与板端验证分别记录。
 
-## 本地完整交付资料
+## 可选运行产物
 
-项目维护者本地另存 `board/runtime.tar.gz`、`board/firmware.tar.gz`、`src/dev.tar.gz` 等选定运行产物。拥有这些资料时可使用 runtime.py、restore.py、package.py 重打包或恢复完整历史开发目录；它们不是公开克隆的基础验证前提。运行资产受各自许可约束，不放入本仓库或公共 Release。
+runtime.py、restore.py 和 package.py 用于处理配套的运行产物与源码归档。使用这些工具需要自行准备对应输入；公开源码的基础测试和 stage.py 不依赖运行产物。
