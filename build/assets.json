@@ -225,7 +225,10 @@
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
       "license": "Project GPL-2.0-only; built from included hybrid/common source",
-      "executable": true
+      "executable": true,
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_xmodel",
@@ -233,7 +236,10 @@
       "kind": "existing Google Lightning method1+CLE B3136 xmodel",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Google Apache-2.0 model derivative; AMD compiler license separate"
+      "license": "Google Apache-2.0 model derivative; AMD compiler license separate",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_mapping",
@@ -241,7 +247,10 @@
       "kind": "exact existing raw head names/shapes/fix points",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Google model-derived metadata Apache-2.0"
+      "license": "Google model-derived metadata Apache-2.0",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_post_model",
@@ -249,7 +258,10 @@
       "kind": "existing float-post-only TFLite graph",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Google Apache-2.0 derived existing SavedModel graph"
+      "license": "Google Apache-2.0 derived existing SavedModel graph",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_post_mapping",
@@ -257,7 +269,10 @@
       "kind": "existing post graph role/name mapping",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Google model-derived metadata Apache-2.0"
+      "license": "Google model-derived metadata Apache-2.0",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_native_post",
@@ -265,7 +280,10 @@
       "kind": "actual AArch64 exact native raw-head post ELF",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Project GPL-2.0-only; original native post source included"
+      "license": "Project GPL-2.0-only; original native post source included",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_post_contract",
@@ -273,7 +291,10 @@
       "kind": "exact fixed post-model bytes/constants contract; private model artifact",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Google model-derived constants Apache-2.0; existing project contract"
+      "license": "Google model-derived constants Apache-2.0; existing project contract",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_model_license",
@@ -281,7 +302,10 @@
       "kind": "original complete Google model license",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Apache-2.0"
+      "license": "Apache-2.0",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "lightning_artifact_provenance",
@@ -289,7 +313,10 @@
       "kind": "exact existing quantization/export/native-post provenance",
       "required": true,
       "origin": "Existing accepted Lightning artifacts; see hybrid/sources.json and docs/third_party_dependencies.md",
-      "license": "Preserve actual Google Apache-2.0/model and project GPL notices"
+      "license": "Preserve actual Google Apache-2.0/model and project GPL notices",
+      "modes": [
+        "hybrid"
+      ]
     },
     {
       "role": "display_v2_camera_reference",

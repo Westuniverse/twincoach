@@ -73,3 +73,42 @@ python3 build/runtime.py --output /tmp/twincoach-runtime.tar.gz --assets /absolu
 
 package.py 只打包 Git 管理的项目文件。runtime.py 根据源码与显式资产清单装配运行包，无需私有基线归档。
 
+
+## 原生编译工具链
+
+原生脚本从环境变量读取编译器和 SDK 位置：
+
+| 变量 | 作用 |
+| --- | --- |
+| CC、CXX | C/C++ 编译器，可使用交叉编译器或带空格的可执行文件路径 |
+| ARCH_FLAGS | 目标架构参数，默认面向板端处理器；空值表示不增加架构参数 |
+| CFLAGS、CXXFLAGS | 附加编译参数 |
+| VART_PREFIX | VART/XIR SDK 的 include 与 lib 前缀 |
+| LDFLAGS | 附加链接参数 |
+
+例如，交叉编译 worker 时指定工具链和 SDK：
+
+```bash
+CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ \
+VART_PREFIX=/opt/target-sdk \
+bash /tmp/twincoach-runtime/native/worker/compile_native.sh
+```
+
+不依赖板端库的解码模块也可在主机编译：
+
+```bash
+ARCH_FLAGS='' CXX=g++ bash src/native/decode/compile_native.sh
+```
+
+CPython 扩展通过 PYTHON 指定解释器，可用 PYTHON_INCLUDE 和 PYTHON_EXT_SUFFIX 指定目标开发环境。
+
+共享库、内核模块与 CPython 扩展仍需要匹配运行目标的架构和 ABI。编译配置不改变模型精度、权重或算术实现。
+
+## 按运行模式准备资产
+
+```bash
+python3 build/stage.py --output /tmp/twincoach-full --mode full33
+python3 build/stage.py --output /tmp/twincoach-hybrid --mode hybrid
+```
+
+默认双路姿态模式不要求混合模式的 worker 或 Lightning 模型；hybrid 在共同资产之外增加对应依赖。运行包打包支持相同的 --mode 参数，缺失项由 staging.json 按模式列出。

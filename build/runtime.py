@@ -9,11 +9,12 @@ from stage import stage
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--mode',choices=['full33','hybrid'],default='full33')
     parser.add_argument('--assets',type=Path,help='Optional model, library and firmware asset manifest')
     args=parser.parse_args()
     with tempfile.TemporaryDirectory(prefix='twincoach-runtime-') as temporary:
         folder=Path(temporary)/'runtime'
-        info=stage(folder,args.assets.resolve() if args.assets else None)
+        info=stage(folder,args.assets.resolve() if args.assets else None,mode=args.mode)
         args.output.parent.mkdir(parents=True,exist_ok=True)
         with tarfile.open(args.output,'x:gz') as archive:
             for path in sorted(folder.rglob('*')):

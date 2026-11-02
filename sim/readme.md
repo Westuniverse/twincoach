@@ -10,6 +10,8 @@ python3 -m unittest discover -s sim -p 'test_*.py' -v
 | 文件 | 覆盖范围 |
 | --- | --- |
 | test_coach.py | 建议保持、观测失效、方向区分与进程传递，共 10 项测试 |
+| test_board.py | 配置覆盖、无连接预览与带空格的远端路径 |
+| test_build.py | 运行模式依赖选择、编译器与 SDK 路径适配 |
 | test_metrics.py | 重复源、统计窗口边界与源龄计算 |
 | rtl.json、rtl/ | 向量指标、关节指标和仿射变换的 RTL 自检配置与测试平台 |
 | public.json | 源码映射、Python 解析、控制引用、文档链接与主机测试结果 |
