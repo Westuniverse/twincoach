@@ -16,6 +16,15 @@
 
 摄像头短运行的有效输入各约 29.9 FPS。输入采集率、姿态更新率和物理屏幕延迟是不同指标；上述回放结果不代表持续真人识别帧率。源龄以输入时间戳到 GPU 完成确认为边界。
 
+[公开完成轨迹](../data/replay.csv) 只保留源身份与相对时间戳。可直接复算：
+
+```bash
+python3 skill/metrics.py data/replay.csv --start 15 --end 44
+python3 build/results.py
+```
+
+前者重算固定窗口指标，后者同时核对资源及时序汇总。原始媒体不随轨迹公开；这不会重新执行推理。最低滚动一秒更新数沿用板端汇总。
+
 ## FPGA 实现
 
 | 指标 | 结果 |
@@ -32,7 +41,7 @@ DPU AXI/core 100 MHz，DPU 2x 与 Tail4 200 MHz，ROI/DMA/shared 100 MHz；DDR �
 
 ## DDR 互连比较
 
-相同输入条件下，DDR 交换/出口 100 MHz 的更新率为 23.551724 次/s，200 MHz 为 23.310345 次/s。提高互连时钟没有形成端到端吞吐收益，ARM 和显示流水仍影响系统表现。详见 [DDR 分析](ddr.md)。
+相同输入条件下，DDR 交换/出口 100 MHz 的更新率为 23.551724 次/s，200 MHz 为 23.310345 次/s。提高互连时钟没有形成端到端吞吐收益，ARM 和显示流水仍影响系统表现。详见 [DDR 分析](ddr.md) 和 [优化依据](optimization.md)，可读数据见 [comparison.json](../data/comparison.json)。
 
 ## 验证范围
 

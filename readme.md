@@ -39,7 +39,7 @@ twincoach/
 └── report/    设计、接口、动作协议、性能与协作说明
 ```
 
-[设计报告](report/design.md) · [实测结果](report/results.md) · [构建与部署](build/readme.md) · [技能包](skill/readme.md) · [依赖与许可](report/third_party.md)
+[设计报告](report/design.md) · [从零复现](report/reproduce.md) · [证据索引](report/evidence.md) · [优化依据](report/optimization.md) · [实测结果](report/results.md) · [构建与部署](build/readme.md) · [技能包](skill/readme.md) · [依赖与许可](report/third_party.md)
 
 ## 快速验证
 
@@ -47,7 +47,8 @@ twincoach/
 git clone https://github.com/Westuniverse/twincoach.git
 cd twincoach
 python3 build/check.py
-python3 skill/metrics.py data/examples/metrics.csv --start 0 --end 2
+python3 build/results.py
+python3 skill/metrics.py data/replay.csv --start 15 --end 44
 ```
 
 基础测试使用 Python 标准库，不需要开发板或模型。源码装配示例：

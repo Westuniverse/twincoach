@@ -1,0 +1,54 @@
+{
+  "project": "TwinCoach",
+  "entries": [
+    {
+      "claim": "host-functions",
+      "kind": "executable",
+      "path": "sim/public.json",
+      "command": "python3 build/check.py",
+      "scope": "Host functional checks only"
+    },
+    {
+      "claim": "arithmetic-rtl",
+      "kind": "executed",
+      "path": "sim/rtl-results.json",
+      "command": "python3 sim/run.py --output /tmp/twincoach-rtl",
+      "scope": "Three behavioral testbenches"
+    },
+    {
+      "claim": "project-creation",
+      "kind": "saved",
+      "path": "sim/project.json",
+      "command": "python3 build/create.py --help",
+      "scope": "Project and BD creation only; tools and licensed IP required"
+    },
+    {
+      "claim": "replay-throughput",
+      "kind": "recomputable",
+      "path": "data/replay.csv",
+      "command": "python3 skill/metrics.py data/replay.csv --start 15 --end 44",
+      "scope": "Saved real inference and GPU completion trace; no camera media"
+    },
+    {
+      "claim": "implementation",
+      "kind": "saved",
+      "path": "build/fpga/reports/timing.rpt",
+      "command": "python3 build/results.py",
+      "scope": "Saved implementation; no new place and route"
+    },
+    {
+      "claim": "ddr-comparison",
+      "kind": "summary",
+      "path": "data/comparison.json",
+      "command": "python3 build/results.py",
+      "scope": "One run per configuration; paired raw traces not included"
+    },
+    {
+      "claim": "portable-skills",
+      "kind": "software",
+      "path": "sim/skill.json",
+      "command": "python3 -m unittest discover -s sim -p 'test_skill.py'",
+      "scope": "No physical PYNQ board execution"
+    }
+  ]
+}

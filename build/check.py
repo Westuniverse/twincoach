@@ -25,7 +25,8 @@ for path in ROOT.glob('board/*.ps1'):
  for name in re.findall(r'([a-zA-Z0-9_-]+\.ps1)',path.read_text()):
   record('control_reference',(path.parent/name).is_file(),script=path.name,target=name)
 # Current public documents use explicit links; historical records remain separately labelled.
-documents=[ROOT/name for name in ['readme.md','build/readme.md','report/design.md','report/results.md','report/assets.md','report/third_party.md','report/development.md','report/collaboration.md']]
+documents=[ROOT/'readme.md',ROOT/'build/readme.md',ROOT/'board/readme.md',ROOT/'sim/readme.md']
+documents.extend(p for p in (ROOT/'report').glob('*.md') if not p.name.endswith('_old.md'))
 documents.extend((ROOT/'skill').rglob('*.md'))
 for path in documents:
  name=str(path.relative_to(ROOT))
@@ -33,6 +34,8 @@ for path in documents:
  for target in re.findall(r'\]\(([^)]+)\)',path.read_text()):
   if '://' not in target and not target.startswith('#'):
    record('document_link',(path.parent/target.split('#')[0]).exists(),document=name,target=target)
+index=json.loads((ROOT/'data/evidence.json').read_text())
+record('evidence_paths',all((ROOT/item['path']).is_file() for item in index['entries']))
 run=subprocess.run([sys.executable,'-m','unittest','discover','-s','sim','-p','test_*.py','-v'],
  cwd=ROOT,env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'},capture_output=True,text=True)
 (ROOT/'sim/tests.log').write_text(run.stdout+run.stderr)

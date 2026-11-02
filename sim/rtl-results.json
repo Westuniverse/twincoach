@@ -1,0 +1,56 @@
+{
+  "backend": "Verilator",
+  "tool": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)",
+  "mode": "behavioral",
+  "passed": true,
+  "cases": [
+    {
+      "name": "vector_metrics_core",
+      "top": "tb_vector_metrics_core",
+      "sources": [
+        "src/rtl/vector_metrics_core.sv",
+        "sim/rtl/tb_vector_metrics_core.sv"
+      ],
+      "passed": true,
+      "compile_exit_code": 0,
+      "run_exit_code": 0,
+      "pass_marker": "TB PASS: vector_metrics_core",
+      "compile_log": "vector_metrics_core/compile.log",
+      "run_log": "vector_metrics_core/run.log",
+      "transcript": "TB PASS: vector_metrics_core\n- sim/rtl/tb_vector_metrics_core.sv:97: Verilog $finish\n"
+    },
+    {
+      "name": "joint_metrics_core",
+      "top": "tb_joint_metrics_core",
+      "sources": [
+        "src/rtl/vector_metrics_core.sv",
+        "src/rtl/joint_metrics_core.sv",
+        "sim/rtl/tb_joint_metrics_core.sv"
+      ],
+      "passed": true,
+      "compile_exit_code": 0,
+      "run_exit_code": 0,
+      "pass_marker": "TB PASS: joint_metrics_core",
+      "compile_log": "joint_metrics_core/compile.log",
+      "run_log": "joint_metrics_core/run.log",
+      "transcript": "TB PASS: joint_metrics_core\n- sim/rtl/tb_joint_metrics_core.sv:139: Verilog $finish\n"
+    },
+    {
+      "name": "affine_transform_3d_core",
+      "top": "tb_affine_transform_3d_core",
+      "sources": [
+        "src/rtl/affine_transform_3d_core.sv",
+        "sim/rtl/tb_affine_transform_3d_core.sv"
+      ],
+      "passed": true,
+      "compile_exit_code": 0,
+      "run_exit_code": 0,
+      "pass_marker": "TB PASS: affine_transform_3d_core",
+      "compile_log": "affine_transform_3d_core/compile.log",
+      "run_log": "affine_transform_3d_core/run.log",
+      "transcript": "TB PASS: affine_transform_3d_core\n- sim/rtl/tb_affine_transform_3d_core.sv:129: Verilog $finish\n"
+    }
+  ],
+  "scope": "Three declared arithmetic/handshake testbenches; not full-network, post-route or board verification.",
+  "log_paths_relative_to": "Output directory supplied to sim/run.py"
+}

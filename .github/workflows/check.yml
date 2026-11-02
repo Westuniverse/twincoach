@@ -7,6 +7,8 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Check public sources and host functions
         run: PYTHONDONTWRITEBYTECODE=1 python3 build/check.py
+      - name: Recompute saved measurement and implementation summaries
+        run: python3 build/results.py
       - name: Stage runtime sources without private assets
         run: python3 build/stage.py --output /tmp/twincoach-stage
       - name: Install host import dependencies
@@ -17,3 +19,24 @@ jobs:
         run: python3 board/control.py start --host example-board --root '~/twincoach demo' --dry-run
       - name: Run the synthetic metrics example
         run: python3 skill/metrics.py data/examples/metrics.csv --start 0 --end 2
+
+  rtl:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install declared simulator
+        run: sudo apt-get update && sudo apt-get install -y verilator make g++
+      - name: Run self-checking arithmetic and handshake testbenches
+        run: python3 sim/run.py --output /tmp/twincoach-rtl
+      - name: Show failure logs
+        if: failure()
+        run: |
+          python3 - <<'PYCODE'
+          from pathlib import Path
+          for path in sorted(Path('/tmp/twincoach-rtl').glob('*/*.log')):
+              print(str(path))
+              print(''.join(path.read_text().splitlines(keepends=True)[-60:]))
+          PYCODE
+      - name: Show test verdicts
+        if: always()
+        run: cat /tmp/twincoach-rtl/results.json

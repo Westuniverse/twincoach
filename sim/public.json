@@ -30,6 +30,24 @@
       "check": "document_link",
       "passed": true,
       "document": "readme.md",
+      "target": "report/reproduce.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "report/evidence.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "report/optimization.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
       "target": "report/results.md"
     },
     {
@@ -102,6 +120,18 @@
       "check": "document_link",
       "passed": true,
       "document": "build/readme.md",
+      "target": "../report/reproduce.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "build/readme.md",
+      "target": "../report/evidence.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "build/readme.md",
       "target": "../report/assets.md"
     },
     {
@@ -109,6 +139,180 @@
       "passed": true,
       "document": "build/readme.md",
       "target": "../report/results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "board/readme.md",
+      "target": "../report/assets.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "sim/readme.md",
+      "target": "../data/results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "sim/readme.md",
+      "target": "../report/evidence.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "design.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "interfaces.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../build/fpga/sources.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "exercises.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../sim/public.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../sim/rtl-results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../sim/project.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../build/fpga/reports/utilization.rpt"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../build/fpga/reports/timing.rpt"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../data/results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../data/replay.csv"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "optimization.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../data/comparison.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../skill/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../sim/skill.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "collaboration.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../sim/results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "../data/evidence.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/evidence.md",
+      "target": "reproduce.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "exercises.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "interfaces.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "../skill/pipeline-metrics/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "../data/comparison.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "ddr.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/optimization.md",
+      "target": "../build/results.py"
     },
     {
       "check": "document_link",
@@ -144,6 +348,18 @@
       "check": "document_link",
       "passed": true,
       "document": "report/design.md",
+      "target": "optimization.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "evidence.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
       "target": "assets.md"
     },
     {
@@ -173,18 +389,6 @@
     {
       "check": "document_link",
       "passed": true,
-      "document": "report/results.md",
-      "target": "../data/results.json"
-    },
-    {
-      "check": "document_link",
-      "passed": true,
-      "document": "report/results.md",
-      "target": "ddr.md"
-    },
-    {
-      "check": "document_link",
-      "passed": true,
       "document": "report/development.md",
       "target": "../skill/readme.md"
     },
@@ -205,6 +409,240 @@
       "passed": true,
       "document": "report/development.md",
       "target": "collaboration.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "../data/results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "../data/replay.csv"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "ddr.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "optimization.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/results.md",
+      "target": "../data/comparison.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/scope.md",
+      "target": "assets.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/scope.md",
+      "target": "../build/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/scope.md",
+      "target": "results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/scope.md",
+      "target": "roadmap.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../build/fpga/sources.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../build/fpga/bd.tcl"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "exercises.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../skill/pipeline-metrics/references/protocol.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "design.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "ddr.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../src/drivers/posepriv_tail4/posepriv_tail4_uapi.h"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../src/drivers/posepriv_tail4/tail4_operator_regs.h"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../src/drivers/posepriv_tail4/posepriv_tail4.c"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../src/drivers/posepriv_shared_dma/posepriv_shared_dma_uapi.h"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../src/drivers/posepriv_shared_dma/posepriv_skinning_contract.h"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../src/drivers/posepriv_shared_dma/posepriv_roi_uapi.h"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../data/examples/runtime.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../data/examples/squat.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../build/sources.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/interfaces.md",
+      "target": "../skill/pynq-pipeline/SKILL.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "../data/replay.csv"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "../sim/rtl-results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "assets.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "../build/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "evidence.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "optimization.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/reproduce.md",
+      "target": "../skill/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/exercises.md",
+      "target": "../data/examples/squat.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/exercises.md",
+      "target": "../build/sources.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/exercises.md",
+      "target": "../src/host/posepriv_coach/exercises/squat_tracker.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/exercises.md",
+      "target": "../src/host/posepriv_coach/session.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/exercises.md",
+      "target": "../src/host/posepriv_coach/compact_coach.py"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/exercises.md",
+      "target": "../sim/test_coach.py"
     },
     {
       "check": "document_link",
@@ -283,6 +721,18 @@
       "passed": true,
       "document": "report/collaboration.md",
       "target": "../skill/pynq-pipeline/references/validation.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/ddr.md",
+      "target": "../data/comparison.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/ddr.md",
+      "target": "results.md"
     },
     {
       "check": "document_link",
@@ -397,6 +847,10 @@
       "passed": true,
       "document": "skill/pynq-pipeline/references/workflow.md",
       "target": "failures.md"
+    },
+    {
+      "check": "evidence_paths",
+      "passed": true
     },
     {
       "check": "host_tests",

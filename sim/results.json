@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "field": "fresh_outputs",
+      "passed": true
+    },
+    {
+      "field": "fresh_outputs_per_s",
+      "passed": true
+    },
+    {
+      "field": "p95_source_age_ms",
+      "passed": true
+    },
+    {
+      "field": "max_confirmation_gap_ms",
+      "passed": true
+    },
+    {
+      "field": "LUT",
+      "passed": true
+    },
+    {
+      "field": "FF",
+      "passed": true
+    },
+    {
+      "field": "CLB",
+      "passed": true
+    },
+    {
+      "field": "BRAM36_equivalents",
+      "passed": true
+    },
+    {
+      "field": "DSP",
+      "passed": true
+    },
+    {
+      "field": "URAM",
+      "passed": true
+    },
+    {
+      "field": "setup_ns",
+      "passed": true
+    },
+    {
+      "field": "TNS_ns",
+      "passed": true
+    },
+    {
+      "field": "hold_ns",
+      "passed": true
+    },
+    {
+      "field": "THS_ns",
+      "passed": true
+    }
+  ],
+  "replay": {
+    "window_s": [
+      15,
+      44
+    ],
+    "fresh_outputs": 668,
+    "fresh_outputs_per_s": 23.03448275862069,
+    "p95_source_age_ms": 290.432884,
+    "max_confirmation_gap_ms": 104.667745,
+    "p95_method": "sorted[floor(.95*(n-1))]"
+  },
+  "resources": {
+    "LUT": {
+      "used": 78404,
+      "available": 117120,
+      "percent": 66.94
+    },
+    "FF": {
+      "used": 115916,
+      "available": 234240,
+      "percent": 49.49
+    },
+    "CLB": {
+      "used": 14629,
+      "available": 14640,
+      "percent": 99.92
+    },
+    "BRAM36_equivalents": {
+      "used": 139,
+      "available": 144,
+      "percent": 96.53
+    },
+    "DSP": {
+      "used": 655,
+      "available": 1248,
+      "percent": 52.48
+    },
+    "URAM": {
+      "used": 64,
+      "available": 64,
+      "percent": 100.0
+    }
+  },
+  "timing": {
+    "setup_ns": 0.017,
+    "TNS_ns": 0.0,
+    "hold_ns": 0.008,
+    "THS_ns": 0.0
+  },
+  "comparison_delta": {
+    "mean_pairs_fps": -0.24137931034482918,
+    "p95_source_age_ms": -0.6815310000000068,
+    "max_gap_ms": 14.74305799999999,
+    "throughput_percent": -1.024890190336758
+  },
+  "scope": "Recomputed saved public data; no new inference, implementation or board run. DDR values are saved summaries, not independently recomputed traces."
+}

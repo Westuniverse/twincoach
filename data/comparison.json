@@ -1,0 +1,26 @@
+{
+  "experiment": "DDR interconnect clock",
+  "input_frames": 2698,
+  "duration_s": 45.019937339,
+  "window_s": [
+    15,
+    44
+  ],
+  "completion": "GPU completion confirmation",
+  "unchanged": "Compute clocks, RTL, models, quantization and input workload",
+  "baseline": {
+    "interconnect_mhz": 100,
+    "mean_pairs_fps": 23.551724137931036,
+    "min_rolling1s": 20,
+    "p95_source_age_ms": 292.44646,
+    "max_gap_ms": 111.343805
+  },
+  "variant": {
+    "interconnect_mhz": 200,
+    "mean_pairs_fps": 23.310344827586206,
+    "min_rolling1s": 20,
+    "p95_source_age_ms": 291.764929,
+    "max_gap_ms": 126.086863
+  },
+  "scope": "One recorded-input run per configuration; no repeat-run confidence interval or component speedup claim"
+}
