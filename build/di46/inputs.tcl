@@ -1,0 +1,47 @@
+# Actual di46 HDL sources.
+set source_files [list \
+    [file join $root {src/rtl/dpu_xrt_control_bridge.sv}] \
+    [file join $root {src/rtl/dpu_xrt_control_bridge_bd.v}] \
+    [file join $root {src/rtl/affine_quantize_3d.sv}] \
+    [file join $root {src/rtl/affine_transform_3d_core.sv}] \
+    [file join $root {src/rtl/avatar_bilinear_rgb8_axis.sv}] \
+    [file join $root {src/rtl/avatar_raster_fragments.sv}] \
+    [file join $root {src/rtl/avatar_raster_packet_axis.sv}] \
+    [file join $root {src/rtl/avatar_raster_texture_axis.sv}] \
+    [file join $root {src/rtl/avatar_raster_tile_axis.sv}] \
+    [file join $root {src/rtl/avatar_skinning_packet_axis.sv}] \
+    [file join $root {src/rtl/avatar_texture_cache.sv}] \
+    [file join $root {src/rtl/avatar_tile_buffer.sv}] \
+    [file join $root {src/rtl/avatar_triangle_lighting_axis.sv}] \
+    [file join $root {src/rtl/avatar_triangle_lighting_core.sv}] \
+    [file join $root {src/rtl/joint_metrics_axis.sv}] \
+    [file join $root {src/rtl/joint_metrics_core.sv}] \
+    [file join $root {src/rtl/rectified_triangulation_axis.sv}] \
+    [file join $root {src/rtl/shared_pose_accel_axis.sv}] \
+    [file join $root {src/rtl/temporal_motion_axis.sv}] \
+    [file join $root {src/rtl/temporal_motion_core.sv}] \
+    [file join $root {src/rtl/temporal_motion_stats_axis.sv}] \
+    [file join $root {src/rtl/temporal_motion_summary_axis_ip.sv}] \
+    [file join $root {src/rtl/vector_metrics_core.sv}] \
+    [file join $root {src/rtl/vertex_skinning_serial_axis.sv}] \
+    [file join $root {src/rtl/shared_pose_accel_axis_ip.sv}] \
+    [file join $root {src/rtl/dpu_axi_observer.sv}] \
+    [file join $root {src/rtl/full33_head4_s16.sv}] \
+    [file join $root {src/rtl/head4_mac_s16.sv}] \
+    [file join $root {src/rtl/head4_requant_s48.sv}] \
+    [file join $root {src/rtl/tail4_compute.sv}] \
+    [file join $root {src/rtl/tail4_conv_axi.sv}] \
+    [file join $root {src/rtl/tail4_feature_feeder.sv}] \
+    [file join $root {src/rtl/tail4_nonconv_axi.sv}] \
+    [file join $root {src/rtl/tail4_operator_axi.sv}] \
+    [file join $root {src/rtl/tensor_alu16_folded_s16.sv}] \
+    [file join $root {src/rtl/tensor_axi128_read.sv}] \
+    [file join $root {src/rtl/tensor_axi128_write.sv}] \
+    [file join $root {src/rtl/tail4_operator_axi_bd_joint.v}] \
+    [file join $root {src/rtl/crop_bilinear_q7_axis.sv}] \
+    [file join $root {src/rtl/crop_tile128_q7_extent_axis.sv}] \
+    [file join $root {src/rtl/roi_control_rx_axis128.sv}] \
+    [file join $root {src/rtl/roi_dma_sampler_axis128.sv}] \
+    [file join $root {src/rtl/roi_dma_sampler_ip.sv}] \
+    [file join $root {src/rtl/joint_metrics_axis_ip.sv}] \
+]

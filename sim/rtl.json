@@ -1,0 +1,48 @@
+[
+  {
+    "name": "vector_metrics_core",
+    "top": "tb_vector_metrics_core",
+    "sources": [
+      "src/rtl/vector_metrics_core.sv",
+      "sim/rtl/tb_vector_metrics_core.sv"
+    ],
+    "include_dirs": [],
+    "flags": [
+      "--timing",
+      "-Wno-fatal"
+    ],
+    "simulate": true,
+    "enabled": true
+  },
+  {
+    "name": "joint_metrics_core",
+    "top": "tb_joint_metrics_core",
+    "sources": [
+      "src/rtl/vector_metrics_core.sv",
+      "src/rtl/joint_metrics_core.sv",
+      "sim/rtl/tb_joint_metrics_core.sv"
+    ],
+    "include_dirs": [],
+    "flags": [
+      "--timing",
+      "-Wno-fatal"
+    ],
+    "simulate": true,
+    "enabled": true
+  },
+  {
+    "name": "affine_transform_3d_core",
+    "top": "tb_affine_transform_3d_core",
+    "sources": [
+      "src/rtl/affine_transform_3d_core.sv",
+      "sim/rtl/tb_affine_transform_3d_core.sv"
+    ],
+    "include_dirs": [],
+    "flags": [
+      "--timing",
+      "-Wno-fatal"
+    ],
+    "simulate": true,
+    "enabled": true
+  }
+]

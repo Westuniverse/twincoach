@@ -1,0 +1,13 @@
+name: Host checks
+on: [push, pull_request]
+jobs:
+  host:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check public sources and host functions
+        run: PYTHONDONTWRITEBYTECODE=1 python3 build/check.py
+      - name: Stage runtime sources without private assets
+        run: python3 build/stage.py --output /tmp/twincoach-stage
+      - name: Run the synthetic metrics example
+        run: python3 skill/metrics.py data/examples/metrics.csv --start 0 --end 2

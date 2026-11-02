@@ -1,0 +1,90 @@
+{
+  "scope": "Official source-only algorithm references; no model or runtime install",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/tasks/cc/vision/pose_detector/proto/pose_detector_graph_options.proto",
+      "local": "upstream/pose_detector_graph_options.proto",
+      "bytes": 1795,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tflite/ssd_anchors_calculator.cc",
+      "local": "upstream/ssd_anchors_calculator.cc",
+      "bytes": 14038,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tflite/ssd_anchors_calculator.proto",
+      "local": "upstream/ssd_anchors_calculator.proto",
+      "bytes": 4026,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/tensors_to_detections_calculator.cc",
+      "local": "upstream/tensors_to_detections_calculator.cc",
+      "bytes": 58704,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/non_max_suppression_calculator.cc",
+      "local": "upstream/non_max_suppression_calculator.cc",
+      "bytes": 15908,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/image_to_tensor_converter_opencv.cc",
+      "local": "upstream/image_to_tensor_converter_opencv.cc",
+      "bytes": 8405,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/image_to_tensor_utils.cc",
+      "local": "upstream/image_to_tensor_utils.cc",
+      "bytes": 10621,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/image_to_tensor_calculator.cc",
+      "local": "upstream/image_to_tensor_calculator.cc",
+      "bytes": 14566,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/image_to_tensor_calculator.proto",
+      "local": "upstream/image_to_tensor_calculator.proto",
+      "bytes": 2897,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/detection_projection_calculator.cc",
+      "local": "upstream/detection_projection_calculator.cc",
+      "bytes": 6673,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/tasks/cc/components/processors/image_preprocessing_graph.cc",
+      "local": "upstream/image_preprocessing_graph.cc",
+      "bytes": 12100,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/detection_letterbox_removal_calculator.cc",
+      "local": "upstream/detection_letterbox_removal_calculator.cc",
+      "bytes": 5827,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    }
+  ],
+  "reuse": "tail4_preview_adapter_20261030/upstream contains pose_detector_graph/ROI calculators/LICENSE"
+}

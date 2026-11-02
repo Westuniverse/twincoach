@@ -1,0 +1,15 @@
+/* Private integration fragment from joint BD handoff; not installed/compiled.
+ * Parent must have #address-cells=2,#size-cells=2 and an existing GIC phandle.
+ * Driver derives MMIO/IRQ from this binding, never from a default C address.
+ * HP0_FPD is not ACE-coherent: deliberately no dma-coherent property.
+ * Reconfirm active bitstream/DT before root uses this fragment.
+ */
+&amba_pl {
+ tail4_operator: tail4-operator@a2030000 {
+  compatible = "posepriv,tail4-operator-1.0";
+  reg = <0x0 0xa2030000 0x0 0x1000>;
+  interrupt-parent = <&gic>;
+  interrupts = <0 91 4>;
+  status = "okay";
+ };
+};

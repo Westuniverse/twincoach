@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "exercise": "squat",
+  "minimum_coverage": 0.8,
+  "minimum_observation_confidence": 0.5,
+  "maximum_tracking_gap_ms": 1000,
+  "missing_tracking_policy": "reset",
+  "status": "provisional_process_scoring_engineering_values",
+  "phase_thresholds_deg": {
+    "standing_min": 160,
+    "descending_enter": 150,
+    "bottom_max": 110,
+    "ascending_enter": 120
+  },
+  "process_scoring": {
+    "algorithm": "process_time_v1",
+    "maximum_interval_ms": 250,
+    "bottom_half_window_ms": 150,
+    "minimum_bottom_window_ms": 100,
+    "minimum_time_coverage": 0.8,
+    "low_score_threshold": 80,
+    "sustained_deviation_ms": 300,
+    "moving_trunk_ideal_min": 0
+  },
+  "rules": [
+    {
+      "name": "side_depth_ratio",
+      "view": "side",
+      "unit": "ratio",
+      "ideal_min": 0.9,
+      "ideal_max": 1.1,
+      "tolerance": 0.3,
+      "weight": 0.3
+    },
+    {
+      "name": "side_trunk_angle_deg",
+      "view": "side",
+      "unit": "deg",
+      "ideal_min": 10,
+      "ideal_max": 35,
+      "tolerance": 25,
+      "weight": 0.25
+    },
+    {
+      "name": "front_knee_symmetry",
+      "view": "front",
+      "unit": "ratio",
+      "ideal_min": 0.9,
+      "ideal_max": 1.1,
+      "tolerance": 0.25,
+      "weight": 0.25
+    },
+    {
+      "name": "tempo_seconds",
+      "view": "side",
+      "unit": "s",
+      "ideal_min": 2,
+      "ideal_max": 4,
+      "tolerance": 2,
+      "weight": 0.2
+    }
+  ]
+}

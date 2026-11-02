@@ -1,0 +1,1606 @@
+[
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_skinning_contract.h",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_skinning_contract.h"
+  },
+  {
+    "path": "src/render/affine_compose.c",
+    "runtime": "board_tests/affine_compose.c"
+  },
+  {
+    "path": "src/render/bone_affine.c",
+    "runtime": "board_tests/bone_affine.c"
+  },
+  {
+    "path": "src/render/gles_avatar/analyze_head.py",
+    "runtime": "board_tests/gles_avatar/analyze_head.py"
+  },
+  {
+    "path": "src/render/gles_avatar/assess_face_axis.py",
+    "runtime": "board_tests/gles_avatar/assess_face_axis.py"
+  },
+  {
+    "path": "src/render/gles_avatar/assess_interpolation.py",
+    "runtime": "board_tests/gles_avatar/assess_interpolation.py"
+  },
+  {
+    "path": "src/render/gles_avatar/authored_replay.py",
+    "runtime": "board_tests/gles_avatar/authored_replay.py"
+  },
+  {
+    "path": "src/render/gles_avatar/benchmark.py",
+    "runtime": "board_tests/gles_avatar/benchmark.py"
+  },
+  {
+    "path": "src/render/gles_avatar/check_playlist.py",
+    "runtime": "board_tests/gles_avatar/check_playlist.py"
+  },
+  {
+    "path": "src/render/gles_avatar/egl_context.py",
+    "runtime": "board_tests/gles_avatar/egl_context.py"
+  },
+  {
+    "path": "src/render/gles_avatar/gles_text.py",
+    "runtime": "board_tests/gles_avatar/gles_text.py"
+  },
+  {
+    "path": "src/render/gles_avatar/image_lookahead.py",
+    "runtime": "board_tests/gles_avatar/image_lookahead.py"
+  },
+  {
+    "path": "src/render/gles_avatar/mesh_interpolation.py",
+    "runtime": "board_tests/gles_avatar/mesh_interpolation.py"
+  },
+  {
+    "path": "src/render/gles_avatar/movie_player.py",
+    "runtime": "board_tests/gles_avatar/movie_player.py"
+  },
+  {
+    "path": "src/render/gles_avatar/read_ahead.py",
+    "runtime": "board_tests/gles_avatar/read_ahead.py"
+  },
+  {
+    "path": "src/render/gles_avatar/replay_sources.py",
+    "runtime": "board_tests/gles_avatar/replay_sources.py"
+  },
+  {
+    "path": "src/render/gles_avatar/score_process.py",
+    "runtime": "board_tests/gles_avatar/score_process.py"
+  },
+  {
+    "path": "src/render/gles_avatar/score_process_worker.py",
+    "runtime": "board_tests/gles_avatar/score_process_worker.py"
+  },
+  {
+    "path": "src/render/gles_avatar/skinning_reuse.py",
+    "runtime": "board_tests/gles_avatar/skinning_reuse.py"
+  },
+  {
+    "path": "src/render/gles_avatar/verify_text_buffer.py",
+    "runtime": "board_tests/gles_avatar/verify_text_buffer.py"
+  },
+  {
+    "path": "src/render/gles_avatar/video_frames.py",
+    "runtime": "board_tests/gles_avatar/video_frames.py"
+  },
+  {
+    "path": "src/render/gles_avatar/world_cache.py",
+    "runtime": "board_tests/gles_avatar/world_cache.py"
+  },
+  {
+    "path": "src/render/gles_normal_prep.c",
+    "runtime": "board_tests/gles_normal_prep.c"
+  },
+  {
+    "path": "src/render/gles_submit.c",
+    "runtime": "board_tests/gles_submit.c"
+  },
+  {
+    "path": "src/render/jpeg_decode.c",
+    "runtime": "board_tests/jpeg_decode.c"
+  },
+  {
+    "path": "src/render/native_movenet_post.c",
+    "runtime": "board_tests/native_movenet_post.c"
+  },
+  {
+    "path": "src/render/native_movenet_post_neon.c",
+    "runtime": "board_tests/native_movenet_post_neon.c"
+  },
+  {
+    "path": "src/render/rig_limb_batch.c",
+    "runtime": "board_tests/rig_limb_batch.c"
+  },
+  {
+    "path": "src/render/rig_tail.c",
+    "runtime": "board_tests/rig_tail.c"
+  },
+  {
+    "path": "src/render/skinning_packet_validator.c",
+    "runtime": "board_tests/skinning_packet_validator.c"
+  },
+  {
+    "path": "src/render/world_math.c",
+    "runtime": "board_tests/world_math.c"
+  },
+  {
+    "path": "src/render/world_metadata.c",
+    "runtime": "board_tests/world_metadata.c"
+  },
+  {
+    "path": "src/render/world_prepare.c",
+    "runtime": "board_tests/world_prepare.c"
+  },
+  {
+    "path": "src/native/hybrid/hybrid_pair_worker.cpp",
+    "runtime": "candidate/hybrid_stream_20261031/hybrid_pair_worker.cpp"
+  },
+  {
+    "path": "src/native/hybrid/pair_worker/compile_native.sh",
+    "runtime": "candidate/hybrid_stream_20261031/pair_worker/compile_native.sh"
+  },
+  {
+    "path": "src/native/hybrid/pair_worker/pair_client.py",
+    "runtime": "candidate/hybrid_stream_20261031/pair_worker/pair_client.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/camera_entry.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/camera_entry.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/check_source_closure.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/check_source_closure.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/hybrid_entry.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_entry.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/hybrid_process.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_process.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/hybrid_runtime.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_runtime.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/hybrid_transport.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/hybrid_transport.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/indexed_source.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/indexed_source.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/make_config.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/make_config.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/run_hybrid_preview.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/run_hybrid_preview.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/run_hybrid_replay.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/run_hybrid_replay.py"
+  },
+  {
+    "path": "src/native/hybrid/stream_profile/run_indexed_replay.py",
+    "runtime": "candidate/hybrid_stream_20261031/stream_profile/run_indexed_replay.py"
+  },
+  {
+    "path": "src/native/client/combined_client.py",
+    "runtime": "candidate/tail4_combined_worker_20261030/combined_client.py"
+  },
+  {
+    "path": "src/native/client/combined_protocol.py",
+    "runtime": "candidate/tail4_combined_worker_20261030/combined_protocol.py"
+  },
+  {
+    "path": "src/native/crop/build_map.py",
+    "runtime": "candidate/tail4_crop_fast_20261030/build_map.py"
+  },
+  {
+    "path": "src/native/crop/compile_neon_fast.sh",
+    "runtime": "candidate/tail4_crop_fast_20261030/compile_neon_fast.sh"
+  },
+  {
+    "path": "src/native/crop/crop_map_q5.c",
+    "runtime": "candidate/tail4_crop_fast_20261030/crop_map_q5.c"
+  },
+  {
+    "path": "src/native/crop/crop_q7.c",
+    "runtime": "candidate/tail4_crop_fast_20261030/crop_q7.c"
+  },
+  {
+    "path": "src/native/crop/fast_crop.py",
+    "runtime": "candidate/tail4_crop_fast_20261030/fast_crop.py"
+  },
+  {
+    "path": "src/native/crop/fast_frontend.py",
+    "runtime": "candidate/tail4_crop_fast_20261030/fast_frontend.py"
+  },
+  {
+    "path": "src/native/decode/compile_native.sh",
+    "runtime": "candidate/tail4_decode_native_20261030/compile_native.sh"
+  },
+  {
+    "path": "src/native/decode/decode_leaf.cpp",
+    "runtime": "candidate/tail4_decode_native_20261030/decode_leaf.cpp"
+  },
+  {
+    "path": "src/native/decode/native_decoder.py",
+    "runtime": "candidate/tail4_decode_native_20261030/native_decoder.py"
+  },
+  {
+    "path": "src/native/geometry/geometry_full33_process.py",
+    "runtime": "candidate/tail4_geometry_process_20261030/geometry_full33_process.py"
+  },
+  {
+    "path": "src/native/preview/preview_runtime.py",
+    "runtime": "candidate/tail4_hdmi_candidate_20261030/preview_runtime.py"
+  },
+  {
+    "path": "src/native/frontend/live_frontend.py",
+    "runtime": "candidate/tail4_live_frontend_20261030/live_frontend.py"
+  },
+  {
+    "path": "src/native/gl/field_preview_gles_native.py",
+    "runtime": "candidate/tail4_native_gl_submit_20261031/field_preview_gles_native.py"
+  },
+  {
+    "path": "src/native/gl/native_gl.py",
+    "runtime": "candidate/tail4_native_gl_submit_20261031/native_gl.py"
+  },
+  {
+    "path": "src/native/adapter/preview_adapter.py",
+    "runtime": "candidate/tail4_preview_adapter_20261030/preview_adapter.py"
+  },
+  {
+    "path": "src/native/entry/_leased_process_clone.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/_leased_process_clone.py"
+  },
+  {
+    "path": "src/native/entry/compile_head_batch.sh",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/compile_head_batch.sh"
+  },
+  {
+    "path": "src/native/entry/compile_v2_math.sh",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/compile_v2_math.sh"
+  },
+  {
+    "path": "src/native/entry/display_v2_bridge.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/display_v2_bridge.py"
+  },
+  {
+    "path": "src/native/entry/fast_world_filter.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/fast_world_filter.py"
+  },
+  {
+    "path": "src/native/entry/field_preview_full33_split.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/field_preview_full33_split.py"
+  },
+  {
+    "path": "src/native/entry/geometry_full33_process.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/geometry_full33_process.py"
+  },
+  {
+    "path": "src/native/entry/head_batch.c",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/head_batch.c"
+  },
+  {
+    "path": "src/native/entry/image_lease.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/image_lease.py"
+  },
+  {
+    "path": "src/native/entry/leased_pipeline.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/leased_pipeline.py"
+  },
+  {
+    "path": "src/native/entry/leased_stream_process.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/leased_stream_process.py"
+  },
+  {
+    "path": "src/native/entry/native_head_batch.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/native_head_batch.py"
+  },
+  {
+    "path": "src/native/entry/native_v2_math.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/native_v2_math.py"
+  },
+  {
+    "path": "src/native/entry/neutral_root_runtime.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/neutral_root_runtime.py"
+  },
+  {
+    "path": "src/native/entry/quality_capture.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/quality_capture.py"
+  },
+  {
+    "path": "src/native/entry/recovery_hook.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/recovery_hook.py"
+  },
+  {
+    "path": "src/native/entry/roi_crop.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/roi_crop.py"
+  },
+  {
+    "path": "src/native/entry/roi_shared_fd.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/roi_shared_fd.py"
+  },
+  {
+    "path": "src/native/entry/run_preview.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/run_preview.py"
+  },
+  {
+    "path": "src/native/entry/run_replay.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/run_replay.py"
+  },
+  {
+    "path": "src/native/entry/split_pipeline.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/split_pipeline.py"
+  },
+  {
+    "path": "src/native/entry/torso_input_translate_head.py",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/torso_input_translate_head.py"
+  },
+  {
+    "path": "src/native/entry/v2_math.c",
+    "runtime": "candidate/tail4_public_profile_20261031/entry/v2_math.c"
+  },
+  {
+    "path": "src/native/worker/compile_native.sh",
+    "runtime": "candidate/tail4_shm_worker_20261030/compile_native.sh"
+  },
+  {
+    "path": "src/native/worker/posepriv_tail4_uapi.h",
+    "runtime": "candidate/tail4_shm_worker_20261030/posepriv_tail4_uapi.h"
+  },
+  {
+    "path": "src/native/worker/shm_client.py",
+    "runtime": "candidate/tail4_shm_worker_20261030/shm_client.py"
+  },
+  {
+    "path": "src/native/worker/shm_protocol.py",
+    "runtime": "candidate/tail4_shm_worker_20261030/shm_protocol.py"
+  },
+  {
+    "path": "src/native/worker/tail4_boundary.h",
+    "runtime": "candidate/tail4_shm_worker_20261030/tail4_boundary.h"
+  },
+  {
+    "path": "src/native/worker/tail4_operator_regs.h",
+    "runtime": "candidate/tail4_shm_worker_20261030/tail4_operator_regs.h"
+  },
+  {
+    "path": "src/native/worker/tail4_runtime.c",
+    "runtime": "candidate/tail4_shm_worker_20261030/tail4_runtime.c"
+  },
+  {
+    "path": "src/native/worker/tail4_runtime.h",
+    "runtime": "candidate/tail4_shm_worker_20261030/tail4_runtime.h"
+  },
+  {
+    "path": "src/native/worker/tail4_shm_worker.cpp",
+    "runtime": "candidate/tail4_shm_worker_20261030/tail4_shm_worker.cpp"
+  },
+  {
+    "path": "src/native/worker/tail4_submit.h",
+    "runtime": "candidate/tail4_shm_worker_20261030/tail4_submit.h"
+  },
+  {
+    "path": "src/native/actor/stream_actor.py",
+    "runtime": "candidate/tail4_stream_preview_20261030/stream_actor.py"
+  },
+  {
+    "path": "src/native/actor/stream_runtime.py",
+    "runtime": "candidate/tail4_stream_preview_20261030/stream_runtime.py"
+  },
+  {
+    "path": "src/native/process/completion_first.py",
+    "runtime": "candidate/tail4_stream_process_20261030/completion_first.py"
+  },
+  {
+    "path": "src/native/process/jpeg_owner.py",
+    "runtime": "candidate/tail4_stream_process_20261030/jpeg_owner.py"
+  },
+  {
+    "path": "src/native/process/stream_process.py",
+    "runtime": "candidate/tail4_stream_process_20261030/stream_process.py"
+  },
+  {
+    "path": "src/native/stream/stream_client.py",
+    "runtime": "candidate/tail4_stream_worker_20261030/stream_client.py"
+  },
+  {
+    "path": "src/native/filter/build.py",
+    "runtime": "candidate/tail4_world_filter_native_20261031/build.py"
+  },
+  {
+    "path": "src/native/filter/world_filter.c",
+    "runtime": "candidate/tail4_world_filter_native_20261031/world_filter.c"
+  },
+  {
+    "path": "src/native/filter/world_filter.py",
+    "runtime": "candidate/tail4_world_filter_native_20261031/world_filter.py"
+  },
+  {
+    "path": "src/native/world/world_math.py",
+    "runtime": "candidate/tail4_world_math_20261031/world_math.py"
+  },
+  {
+    "path": "src/control/control.py",
+    "runtime": "control.py"
+  },
+  {
+    "path": "src/control/hybrid_control.py",
+    "runtime": "hybrid_control.py"
+  },
+  {
+    "path": "report/licenses/gpl-2.0-only.txt",
+    "runtime": "licenses/GPL-2.0-only.txt"
+  },
+  {
+    "path": "report/licenses/mediapipe-apache-2.0.txt",
+    "runtime": "licenses/MediaPipe-Apache-2.0.txt"
+  },
+  {
+    "path": "report/licenses/libjpeg-turbo-installed-copyright.txt",
+    "runtime": "licenses/libjpeg-turbo-installed-copyright.txt"
+  },
+  {
+    "path": "report/licenses/tail4_live_frontend_20261030.sources.json",
+    "runtime": "licenses/tail4_live_frontend_20261030.sources.json"
+  },
+  {
+    "path": "report/licenses/tail4_preview_adapter_20261030.sources.json",
+    "runtime": "licenses/tail4_preview_adapter_20261030.sources.json"
+  },
+  {
+    "path": "build/helpers/assemble_hdmi_playlist.py",
+    "runtime": "scripts/assemble_hdmi_playlist.py"
+  },
+  {
+    "path": "build/helpers/board/prepare_tail4_device.sh",
+    "runtime": "scripts/board/prepare_tail4_device.sh"
+  },
+  {
+    "path": "build/helpers/board/run_camera_dynamic_fps_session.py",
+    "runtime": "scripts/board/run_camera_dynamic_fps_session.py"
+  },
+  {
+    "path": "build/helpers/board/run_shared_pose_session.sh",
+    "runtime": "scripts/board/run_shared_pose_session.sh"
+  },
+  {
+    "path": "build/helpers/board/show_hdmi_camera.py",
+    "runtime": "scripts/board/show_hdmi_camera.py"
+  },
+  {
+    "path": "build/helpers/board/stream_dual_mjpeg.py",
+    "runtime": "scripts/board/stream_dual_mjpeg.py"
+  },
+  {
+    "path": "build/helpers/build_native_affine.py",
+    "runtime": "scripts/build_native_affine.py"
+  },
+  {
+    "path": "build/helpers/build_native_bone_affine.py",
+    "runtime": "scripts/build_native_bone_affine.py"
+  },
+  {
+    "path": "build/helpers/build_native_gles_prep.py",
+    "runtime": "scripts/build_native_gles_prep.py"
+  },
+  {
+    "path": "build/helpers/build_native_gles_submit.py",
+    "runtime": "scripts/build_native_gles_submit.py"
+  },
+  {
+    "path": "build/helpers/build_native_jpeg_decode.py",
+    "runtime": "scripts/build_native_jpeg_decode.py"
+  },
+  {
+    "path": "build/helpers/build_native_movenet_post.py",
+    "runtime": "scripts/build_native_movenet_post.py"
+  },
+  {
+    "path": "build/helpers/build_native_rig_limb_batch.py",
+    "runtime": "scripts/build_native_rig_limb_batch.py"
+  },
+  {
+    "path": "build/helpers/build_native_rig_tail.py",
+    "runtime": "scripts/build_native_rig_tail.py"
+  },
+  {
+    "path": "build/helpers/build_native_world_math.py",
+    "runtime": "scripts/build_native_world_math.py"
+  },
+  {
+    "path": "build/helpers/build_native_world_metadata.py",
+    "runtime": "scripts/build_native_world_metadata.py"
+  },
+  {
+    "path": "build/helpers/build_native_world_prepare.py",
+    "runtime": "scripts/build_native_world_prepare.py"
+  },
+  {
+    "path": "build/helpers/make_avatar_triangle_lighting_fixture.py",
+    "runtime": "scripts/make_avatar_triangle_lighting_fixture.py"
+  },
+  {
+    "path": "build/helpers/pps4_roi1_profile.py",
+    "runtime": "scripts/pps4_roi1_profile.py"
+  },
+  {
+    "path": "build/helpers/verify_motion_summary_bridge.py",
+    "runtime": "scripts/verify_motion_summary_bridge.py"
+  },
+  {
+    "path": "build/helpers/verify_rectified_rtl_bridge.py",
+    "runtime": "scripts/verify_rectified_rtl_bridge.py"
+  },
+  {
+    "path": "build/helpers/verify_shared_pose_dma.py",
+    "runtime": "scripts/verify_shared_pose_dma.py"
+  },
+  {
+    "path": "build/helpers/verify_shared_pose_rtl_bridge.py",
+    "runtime": "scripts/verify_shared_pose_rtl_bridge.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/__init__.py",
+    "runtime": "src/posepriv_coach/__init__.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/accelerated_session_evidence.py",
+    "runtime": "src/posepriv_coach/accelerated_session_evidence.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/action_feature_geometry.py",
+    "runtime": "src/posepriv_coach/action_feature_geometry.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/activation_lut.py",
+    "runtime": "src/posepriv_coach/activation_lut.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/authored_rig.py",
+    "runtime": "src/posepriv_coach/authored_rig.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_acceptance.py",
+    "runtime": "src/posepriv_coach/avatar_acceptance.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_appearance.py",
+    "runtime": "src/posepriv_coach/avatar_appearance.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_bilinear.py",
+    "runtime": "src/posepriv_coach/avatar_bilinear.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_calibration.py",
+    "runtime": "src/posepriv_coach/avatar_calibration.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_display.py",
+    "runtime": "src/posepriv_coach/avatar_display.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_dma_benchmark.py",
+    "runtime": "src/posepriv_coach/avatar_dma_benchmark.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_image_source.py",
+    "runtime": "src/posepriv_coach/avatar_image_source.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_pipeline.py",
+    "runtime": "src/posepriv_coach/avatar_pipeline.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_png.py",
+    "runtime": "src/posepriv_coach/avatar_png.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_raster.py",
+    "runtime": "src/posepriv_coach/avatar_raster.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_raster_packet.py",
+    "runtime": "src/posepriv_coach/avatar_raster_packet.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_runtime.py",
+    "runtime": "src/posepriv_coach/avatar_runtime.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_setup.py",
+    "runtime": "src/posepriv_coach/avatar_setup.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_skinning.py",
+    "runtime": "src/posepriv_coach/avatar_skinning.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_skinning_palettes.py",
+    "runtime": "src/posepriv_coach/avatar_skinning_palettes.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_snapshot_reuse.py",
+    "runtime": "src/posepriv_coach/avatar_snapshot_reuse.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_surface.py",
+    "runtime": "src/posepriv_coach/avatar_surface.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_svg.py",
+    "runtime": "src/posepriv_coach/avatar_svg.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_texture.py",
+    "runtime": "src/posepriv_coach/avatar_texture.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_tile_plan.py",
+    "runtime": "src/posepriv_coach/avatar_tile_plan.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_triangle_lighting_backend.py",
+    "runtime": "src/posepriv_coach/avatar_triangle_lighting_backend.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_triangle_lighting_fixed.py",
+    "runtime": "src/posepriv_coach/avatar_triangle_lighting_fixed.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_triangle_lighting_packet.py",
+    "runtime": "src/posepriv_coach/avatar_triangle_lighting_packet.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_view.py",
+    "runtime": "src/posepriv_coach/avatar_view.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/avatar_width_morph.py",
+    "runtime": "src/posepriv_coach/avatar_width_morph.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/board_audit.py",
+    "runtime": "src/posepriv_coach/board_audit.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/calibration_coverage.py",
+    "runtime": "src/posepriv_coach/calibration_coverage.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/camera_mode_selection.py",
+    "runtime": "src/posepriv_coach/camera_mode_selection.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/camera_probe.py",
+    "runtime": "src/posepriv_coach/camera_probe.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/camera_profiles.py",
+    "runtime": "src/posepriv_coach/camera_profiles.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/capture.py",
+    "runtime": "src/posepriv_coach/capture.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/cnn_worker_protocol.py",
+    "runtime": "src/posepriv_coach/cnn_worker_protocol.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/compact_coach.py",
+    "runtime": "src/posepriv_coach/compact_coach.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/compact_presentation_trace.py",
+    "runtime": "src/posepriv_coach/compact_presentation_trace.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/comparison_display.py",
+    "runtime": "src/posepriv_coach/comparison_display.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/contracts.py",
+    "runtime": "src/posepriv_coach/contracts.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/current_image_tracking.py",
+    "runtime": "src/posepriv_coach/current_image_tracking.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/deployment_readiness.py",
+    "runtime": "src/posepriv_coach/deployment_readiness.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/depth_angle_scoring.py",
+    "runtime": "src/posepriv_coach/depth_angle_scoring.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/display.py",
+    "runtime": "src/posepriv_coach/display.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/display_dispatch.py",
+    "runtime": "src/posepriv_coach/display_dispatch.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/display_hands.py",
+    "runtime": "src/posepriv_coach/display_hands.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/display_preview_v2.py",
+    "runtime": "src/posepriv_coach/display_preview_v2.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/display_probe.py",
+    "runtime": "src/posepriv_coach/display_probe.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/dma_benchmark.py",
+    "runtime": "src/posepriv_coach/dma_benchmark.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/dma_proxy_overlay.py",
+    "runtime": "src/posepriv_coach/dma_proxy_overlay.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/exercises/__init__.py",
+    "runtime": "src/posepriv_coach/exercises/__init__.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/exercises/squat.py",
+    "runtime": "src/posepriv_coach/exercises/squat.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/exercises/squat_tracker.py",
+    "runtime": "src/posepriv_coach/exercises/squat_tracker.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/feedback_zh.py",
+    "runtime": "src/posepriv_coach/feedback_zh.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_image_tracking.py",
+    "runtime": "src/posepriv_coach/field_image_tracking.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_playback.py",
+    "runtime": "src/posepriv_coach/field_playback.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview.py",
+    "runtime": "src/posepriv_coach/field_preview.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_geometry.py",
+    "runtime": "src/posepriv_coach/field_preview_geometry.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_geometry_process.py",
+    "runtime": "src/posepriv_coach/field_preview_geometry_process.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_gles.py",
+    "runtime": "src/posepriv_coach/field_preview_gles.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_images.py",
+    "runtime": "src/posepriv_coach/field_preview_images.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_pipeline.py",
+    "runtime": "src/posepriv_coach/field_preview_pipeline.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_process.py",
+    "runtime": "src/posepriv_coach/field_preview_process.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_shared.py",
+    "runtime": "src/posepriv_coach/field_preview_shared.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_skinning.py",
+    "runtime": "src/posepriv_coach/field_preview_skinning.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_preview_speech.py",
+    "runtime": "src/posepriv_coach/field_preview_speech.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/field_stronger_backend.py",
+    "runtime": "src/posepriv_coach/field_stronger_backend.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/full33_preview_spawn.py",
+    "runtime": "src/posepriv_coach/full33_preview_spawn.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/generation_timing.py",
+    "runtime": "src/posepriv_coach/generation_timing.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/geometry.py",
+    "runtime": "src/posepriv_coach/geometry.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/gltf_asset.py",
+    "runtime": "src/posepriv_coach/gltf_asset.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/indexed_mjpeg.py",
+    "runtime": "src/posepriv_coach/indexed_mjpeg.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/joint_backend.py",
+    "runtime": "src/posepriv_coach/joint_backend.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/joint_filter.py",
+    "runtime": "src/posepriv_coach/joint_filter.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_avatar_dma.py",
+    "runtime": "src/posepriv_coach/linux_avatar_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_avatar_mouse.py",
+    "runtime": "src/posepriv_coach/linux_avatar_mouse.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_devices.py",
+    "runtime": "src/posepriv_coach/linux_devices.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_dma_device.py",
+    "runtime": "src/posepriv_coach/linux_dma_device.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_dma_proxy.py",
+    "runtime": "src/posepriv_coach/linux_dma_proxy.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_framebuffer.py",
+    "runtime": "src/posepriv_coach/linux_framebuffer.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_joint_dma.py",
+    "runtime": "src/posepriv_coach/linux_joint_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_motion_dma.py",
+    "runtime": "src/posepriv_coach/linux_motion_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_pixel_frame_dma.py",
+    "runtime": "src/posepriv_coach/linux_pixel_frame_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_rectified_dma.py",
+    "runtime": "src/posepriv_coach/linux_rectified_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/linux_shared_pose_dma.py",
+    "runtime": "src/posepriv_coach/linux_shared_pose_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/manual_rectangle.py",
+    "runtime": "src/posepriv_coach/manual_rectangle.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/manual_rectangle_precision.py",
+    "runtime": "src/posepriv_coach/manual_rectangle_precision.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/mesh_asset.py",
+    "runtime": "src/posepriv_coach/mesh_asset.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/mjpeg_recording.py",
+    "runtime": "src/posepriv_coach/mjpeg_recording.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/model_package.py",
+    "runtime": "src/posepriv_coach/model_package.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/motion_backend.py",
+    "runtime": "src/posepriv_coach/motion_backend.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/motion_window.py",
+    "runtime": "src/posepriv_coach/motion_window.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/movenet_cnn_worker.py",
+    "runtime": "src/posepriv_coach/movenet_cnn_worker.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/movenet_preprocess.py",
+    "runtime": "src/posepriv_coach/movenet_preprocess.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/movenet_tflite.py",
+    "runtime": "src/posepriv_coach/movenet_tflite.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/movenet_vart.py",
+    "runtime": "src/posepriv_coach/movenet_vart.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/movie_presentation.py",
+    "runtime": "src/posepriv_coach/movie_presentation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/movie_report.py",
+    "runtime": "src/posepriv_coach/movie_report.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/multi_action_reference.py",
+    "runtime": "src/posepriv_coach/multi_action_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_affine.py",
+    "runtime": "src/posepriv_coach/native_affine.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_avatar_geometry.py",
+    "runtime": "src/posepriv_coach/native_avatar_geometry.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_body_tracking.py",
+    "runtime": "src/posepriv_coach/native_body_tracking.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_bone_affine.py",
+    "runtime": "src/posepriv_coach/native_bone_affine.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_camera_preview.py",
+    "runtime": "src/posepriv_coach/native_camera_preview.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_flat_tile_planner.py",
+    "runtime": "src/posepriv_coach/native_flat_tile_planner.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_gles_prep.py",
+    "runtime": "src/posepriv_coach/native_gles_prep.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_gles_submit.py",
+    "runtime": "src/posepriv_coach/native_gles_submit.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_gtk_rgb565.py",
+    "runtime": "src/posepriv_coach/native_gtk_rgb565.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_jpeg_decode.py",
+    "runtime": "src/posepriv_coach/native_jpeg_decode.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_limb_axis.py",
+    "runtime": "src/posepriv_coach/native_limb_axis.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_movenet_post.py",
+    "runtime": "src/posepriv_coach/native_movenet_post.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_object_tracking.py",
+    "runtime": "src/posepriv_coach/native_object_tracking.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_preview_resize.py",
+    "runtime": "src/posepriv_coach/native_preview_resize.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_raster_validator.py",
+    "runtime": "src/posepriv_coach/native_raster_validator.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_rig_limb_batch.py",
+    "runtime": "src/posepriv_coach/native_rig_limb_batch.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_rig_math.py",
+    "runtime": "src/posepriv_coach/native_rig_math.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_rig_tail.py",
+    "runtime": "src/posepriv_coach/native_rig_tail.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_skinning_palettes.py",
+    "runtime": "src/posepriv_coach/native_skinning_palettes.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_skinning_validator.py",
+    "runtime": "src/posepriv_coach/native_skinning_validator.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_triangle_inputs.py",
+    "runtime": "src/posepriv_coach/native_triangle_inputs.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_triangle_painter.py",
+    "runtime": "src/posepriv_coach/native_triangle_painter.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_vart_latest.py",
+    "runtime": "src/posepriv_coach/native_vart_latest.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_vart_stream.py",
+    "runtime": "src/posepriv_coach/native_vart_stream.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_world_math.py",
+    "runtime": "src/posepriv_coach/native_world_math.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_world_metadata.py",
+    "runtime": "src/posepriv_coach/native_world_metadata.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/native_world_prepare.py",
+    "runtime": "src/posepriv_coach/native_world_prepare.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/object_tracking_replay.py",
+    "runtime": "src/posepriv_coach/object_tracking_replay.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/panel_shell_template.py",
+    "runtime": "src/posepriv_coach/panel_shell_template.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/performance_diagnosis.py",
+    "runtime": "src/posepriv_coach/performance_diagnosis.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pipeline.py",
+    "runtime": "src/posepriv_coach/pipeline.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_dma_acceptance.py",
+    "runtime": "src/posepriv_coach/pl_dma_acceptance.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_metrics.py",
+    "runtime": "src/posepriv_coach/pl_metrics.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_motion.py",
+    "runtime": "src/posepriv_coach/pl_motion.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_motion_summary.py",
+    "runtime": "src/posepriv_coach/pl_motion_summary.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_movenet_quantize.py",
+    "runtime": "src/posepriv_coach/pl_movenet_quantize.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_shared_pose_accel.py",
+    "runtime": "src/posepriv_coach/pl_shared_pose_accel.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pl_shared_pose_control.py",
+    "runtime": "src/posepriv_coach/pl_shared_pose_control.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pose_adapter.py",
+    "runtime": "src/posepriv_coach/pose_adapter.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pose_avatar_preview.py",
+    "runtime": "src/posepriv_coach/pose_avatar_preview.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pose_benchmark.py",
+    "runtime": "src/posepriv_coach/pose_benchmark.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pose_input_quality.py",
+    "runtime": "src/posepriv_coach/pose_input_quality.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pose_probe.py",
+    "runtime": "src/posepriv_coach/pose_probe.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/pose_trace.py",
+    "runtime": "src/posepriv_coach/pose_trace.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/presentation_trace.py",
+    "runtime": "src/posepriv_coach/presentation_trace.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_arm_reach.py",
+    "runtime": "src/posepriv_coach/preview_arm_reach.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_body_reference.py",
+    "runtime": "src/posepriv_coach/preview_body_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_cache.py",
+    "runtime": "src/posepriv_coach/preview_cache.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_continuity.py",
+    "runtime": "src/posepriv_coach/preview_continuity.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_core_support.py",
+    "runtime": "src/posepriv_coach/preview_core_support.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_current_body_rotation.py",
+    "runtime": "src/posepriv_coach/preview_current_body_rotation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_depth.py",
+    "runtime": "src/posepriv_coach/preview_depth.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_display_stabilization.py",
+    "runtime": "src/posepriv_coach/preview_display_stabilization.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_face_source.py",
+    "runtime": "src/posepriv_coach/preview_face_source.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_head.py",
+    "runtime": "src/posepriv_coach/preview_head.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_head_face_axis.py",
+    "runtime": "src/posepriv_coach/preview_head_face_axis.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_head_orientation.py",
+    "runtime": "src/posepriv_coach/preview_head_orientation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_head_stabilization.py",
+    "runtime": "src/posepriv_coach/preview_head_stabilization.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_leg_recovery.py",
+    "runtime": "src/posepriv_coach/preview_leg_recovery.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_limb_continuity.py",
+    "runtime": "src/posepriv_coach/preview_limb_continuity.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_presentation.py",
+    "runtime": "src/posepriv_coach/preview_presentation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_relative_arms.py",
+    "runtime": "src/posepriv_coach/preview_relative_arms.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_rigid_avatar.py",
+    "runtime": "src/posepriv_coach/preview_rigid_avatar.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_torso_heading.py",
+    "runtime": "src/posepriv_coach/preview_torso_heading.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_visibility.py",
+    "runtime": "src/posepriv_coach/preview_visibility.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_world_arm_prediction.py",
+    "runtime": "src/posepriv_coach/preview_world_arm_prediction.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/preview_world_arm_recovery.py",
+    "runtime": "src/posepriv_coach/preview_world_arm_recovery.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/process_scoring.py",
+    "runtime": "src/posepriv_coach/process_scoring.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/projected_triangle_batch.py",
+    "runtime": "src/posepriv_coach/projected_triangle_batch.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/recorded_avatar_freeze.py",
+    "runtime": "src/posepriv_coach/recorded_avatar_freeze.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/rectified_backend.py",
+    "runtime": "src/posepriv_coach/rectified_backend.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/rectified_stereo.py",
+    "runtime": "src/posepriv_coach/rectified_stereo.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/relative_object.py",
+    "runtime": "src/posepriv_coach/relative_object.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/relative_object_bootstrap.py",
+    "runtime": "src/posepriv_coach/relative_object_bootstrap.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/relative_object_evaluation.py",
+    "runtime": "src/posepriv_coach/relative_object_evaluation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/relative_object_tracking.py",
+    "runtime": "src/posepriv_coach/relative_object_tracking.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/replay_clock.py",
+    "runtime": "src/posepriv_coach/replay_clock.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/rtmpose_onnx_reference.py",
+    "runtime": "src/posepriv_coach/rtmpose_onnx_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/runtime.py",
+    "runtime": "src/posepriv_coach/runtime.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/runtime_identity.py",
+    "runtime": "src/posepriv_coach/runtime_identity.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/runtime_topology.py",
+    "runtime": "src/posepriv_coach/runtime_topology.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/score_sensitivity.py",
+    "runtime": "src/posepriv_coach/score_sensitivity.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/score_validation.py",
+    "runtime": "src/posepriv_coach/score_validation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/scoring.py",
+    "runtime": "src/posepriv_coach/scoring.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/scoring_study.py",
+    "runtime": "src/posepriv_coach/scoring_study.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/scoring_view_mapping.py",
+    "runtime": "src/posepriv_coach/scoring_view_mapping.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/session.py",
+    "runtime": "src/posepriv_coach/session.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/session_compare.py",
+    "runtime": "src/posepriv_coach/session_compare.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/session_report.py",
+    "runtime": "src/posepriv_coach/session_report.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/shared_raster_display.py",
+    "runtime": "src/posepriv_coach/shared_raster_display.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/shared_skinning_batches.py",
+    "runtime": "src/posepriv_coach/shared_skinning_batches.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/skeleton_display.py",
+    "runtime": "src/posepriv_coach/skeleton_display.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/skeleton_pose.py",
+    "runtime": "src/posepriv_coach/skeleton_pose.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/skinning_matrix_aliases.py",
+    "runtime": "src/posepriv_coach/skinning_matrix_aliases.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/speech_feedback.py",
+    "runtime": "src/posepriv_coach/speech_feedback.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/static_mesh_dma.py",
+    "runtime": "src/posepriv_coach/static_mesh_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/stronger_pose_remote.py",
+    "runtime": "src/posepriv_coach/stronger_pose_remote.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/stronger_pose_runtime.py",
+    "runtime": "src/posepriv_coach/stronger_pose_runtime.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/supervised_action.py",
+    "runtime": "src/posepriv_coach/supervised_action.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/sync.py",
+    "runtime": "src/posepriv_coach/sync.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/sync_calibration.py",
+    "runtime": "src/posepriv_coach/sync_calibration.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/synthetic_stereo.py",
+    "runtime": "src/posepriv_coach/synthetic_stereo.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/temporal_pose_sequence.py",
+    "runtime": "src/posepriv_coach/temporal_pose_sequence.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/text_overlay.py",
+    "runtime": "src/posepriv_coach/text_overlay.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/tracking_mat_frame_reference.py",
+    "runtime": "src/posepriv_coach/tracking_mat_frame_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/tracking_mat_write_reference.py",
+    "runtime": "src/posepriv_coach/tracking_mat_write_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/tracking_pyramid_fixture.py",
+    "runtime": "src/posepriv_coach/tracking_pyramid_fixture.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/tracking_pyramid_reference.py",
+    "runtime": "src/posepriv_coach/tracking_pyramid_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/tracking_scharr_dma_reference.py",
+    "runtime": "src/posepriv_coach/tracking_scharr_dma_reference.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/transport_budget.py",
+    "runtime": "src/posepriv_coach/transport_budget.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/triangulation.py",
+    "runtime": "src/posepriv_coach/triangulation.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/triangulation_cli.py",
+    "runtime": "src/posepriv_coach/triangulation_cli.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/two_view_display_geometry.py",
+    "runtime": "src/posepriv_coach/two_view_display_geometry.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/unified_acceptance.py",
+    "runtime": "src/posepriv_coach/unified_acceptance.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/usb_topology.py",
+    "runtime": "src/posepriv_coach/usb_topology.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/verilator_avatar_transport.py",
+    "runtime": "src/posepriv_coach/verilator_avatar_transport.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/verilator_backend.py",
+    "runtime": "src/posepriv_coach/verilator_backend.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/verilator_transport.py",
+    "runtime": "src/posepriv_coach/verilator_transport.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/video_enhancement.py",
+    "runtime": "src/posepriv_coach/video_enhancement.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/video_replay.py",
+    "runtime": "src/posepriv_coach/video_replay.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/weighted_normals.py",
+    "runtime": "src/posepriv_coach/weighted_normals.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/whole_frame_dma.py",
+    "runtime": "src/posepriv_coach/whole_frame_dma.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/world_avatar_preview.py",
+    "runtime": "src/posepriv_coach/world_avatar_preview.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/world_display_boundaries.py",
+    "runtime": "src/posepriv_coach/world_display_boundaries.py"
+  },
+  {
+    "path": "src/host/posepriv_coach/xsa_contract.py",
+    "runtime": "src/posepriv_coach/xsa_contract.py"
+  },
+  {
+    "path": "data/examples/runtime.json",
+    "runtime": "runtime_config.template.json"
+  },
+  {
+    "path": "data/examples/demo.json",
+    "runtime": "demo-overrides.json"
+  },
+  {
+    "path": "data/examples/fast.json",
+    "runtime": "fast-overrides.json"
+  },
+  {
+    "path": "data/examples/quality.json",
+    "runtime": "quality-overrides.json"
+  },
+  {
+    "path": "data/examples/hybrid.json",
+    "runtime": "hybrid_overrides.example.json"
+  },
+  {
+    "path": "data/examples/overrides.json",
+    "runtime": "config_overrides.EXAMPLE.json"
+  },
+  {
+    "path": "data/examples/p4.json",
+    "runtime": "p4-command.EXAMPLE.json"
+  },
+  {
+    "path": "data/examples/lightning.json",
+    "runtime": "hybrid_lightning_config.template.json"
+  },
+  {
+    "path": "board/restore.ps1",
+    "runtime": "windows/restore.ps1"
+  },
+  {
+    "path": "board/restore-p4.ps1",
+    "runtime": "windows/restore-p4.ps1"
+  },
+  {
+    "path": "board/stop.ps1",
+    "runtime": "windows/stop.ps1"
+  },
+  {
+    "path": "board/stop-run.ps1",
+    "runtime": "windows/stop-run.ps1"
+  },
+  {
+    "path": "board/test.ps1",
+    "runtime": "windows/test.ps1"
+  },
+  {
+    "path": "board/start-full.ps1",
+    "runtime": "windows/start-full.ps1"
+  },
+  {
+    "path": "board/start.ps1",
+    "runtime": "windows/start.ps1"
+  },
+  {
+    "path": "board/start-hybrid.ps1",
+    "runtime": "windows/start-hybrid.ps1"
+  },
+  {
+    "path": "data/examples/squat.json",
+    "runtime": "config/exercises/squat_process_v1.json"
+  },
+  {
+    "path": "src/drivers/posepriv_tail4/tail4_operator_regs.h",
+    "runtime": "board_drivers/posepriv_tail4/tail4_operator_regs.h"
+  },
+  {
+    "path": "src/drivers/posepriv_tail4/posepriv_tail4.c",
+    "runtime": "board_drivers/posepriv_tail4/posepriv_tail4.c"
+  },
+  {
+    "path": "src/drivers/posepriv_tail4/tail4-binding.dtsi",
+    "runtime": "board_drivers/posepriv_tail4/tail4-binding.dtsi"
+  },
+  {
+    "path": "src/drivers/posepriv_tail4/tail4_contract.h",
+    "runtime": "board_drivers/posepriv_tail4/tail4_contract.h"
+  },
+  {
+    "path": "src/drivers/posepriv_tail4/makefile",
+    "runtime": "board_drivers/posepriv_tail4/Makefile"
+  },
+  {
+    "path": "src/drivers/posepriv_tail4/posepriv_tail4_uapi.h",
+    "runtime": "board_drivers/posepriv_tail4/posepriv_tail4_uapi.h"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_raster_contract.h",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_raster_contract.h"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_shared_dma.c",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_shared_dma.c"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_roi_transaction.inc",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_roi_transaction.inc"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/makefile",
+    "runtime": "board_drivers/posepriv_shared_dma/Makefile"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/roi1_regs.h",
+    "runtime": "board_drivers/posepriv_shared_dma/roi1_regs.h"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_shared_dma_contract.h",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_shared_dma_contract.h"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_shared_dma_uapi.h",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_shared_dma_uapi.h"
+  },
+  {
+    "path": "src/drivers/posepriv_shared_dma/posepriv_roi_uapi.h",
+    "runtime": "board_drivers/posepriv_shared_dma/posepriv_roi_uapi.h"
+  },
+  {
+    "path": "src/drivers/posepriv_pixel_frame_dma/makefile",
+    "runtime": "board_drivers/posepriv_pixel_frame_dma/Makefile"
+  },
+  {
+    "path": "src/drivers/posepriv_pixel_frame_dma/posepriv_pixel_frame_dma.c",
+    "runtime": "board_drivers/posepriv_pixel_frame_dma/posepriv_pixel_frame_dma.c"
+  },
+  {
+    "path": "src/drivers/posepriv_pixel_frame_dma/posepriv_pixel_frame_uapi.h",
+    "runtime": "board_drivers/posepriv_pixel_frame_dma/posepriv_pixel_frame_uapi.h"
+  },
+  {
+    "path": "src/drivers/posepriv_pixel_frame_dma/posepriv_pixel_frame_contract.h",
+    "runtime": "board_drivers/posepriv_pixel_frame_dma/posepriv_pixel_frame_contract.h"
+  },
+  {
+    "path": "src/drivers/posepriv_dma_proxy/posepriv_dma_bounds.h",
+    "runtime": "board_drivers/posepriv_dma_proxy/posepriv_dma_bounds.h"
+  },
+  {
+    "path": "src/drivers/posepriv_dma_proxy/posepriv_dma_proxy.c",
+    "runtime": "board_drivers/posepriv_dma_proxy/posepriv_dma_proxy.c"
+  },
+  {
+    "path": "src/drivers/posepriv_dma_proxy/makefile",
+    "runtime": "board_drivers/posepriv_dma_proxy/Makefile"
+  },
+  {
+    "path": "src/drivers/posepriv_dma_proxy/posepriv_dma_binding.h",
+    "runtime": "board_drivers/posepriv_dma_proxy/posepriv_dma_binding.h"
+  }
+]

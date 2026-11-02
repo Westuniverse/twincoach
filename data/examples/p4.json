@@ -1,0 +1,7 @@
+{
+  "command": null,
+  "cwd": null,
+  "environment": {},
+  "session_file": null,
+  "instruction": "Fill the exact saved oldP4 argv/cwd/PYTHONPATH/LD_LIBRARY_PATH/display environment and optional existing P4 session_file. Rollback reuses a matching live P4, otherwise records the restarted P4 in both this package and session_file. No default P4 or firmware path is inferred."
+}

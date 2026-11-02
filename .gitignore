@@ -1,0 +1,60 @@
+# Local runtime assets and historical handoff archives
+*.tar.gz
+*.zip
+*.rar
+*.dcp
+*.xsa
+*.bit
+*.hwh
+*.ko
+*.so
+*.bin
+*.xmodel
+*.tflite
+*.task
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.xwd
+*.mp4
+*.mkv
+*.pdf
+*.log
+*.o
+__pycache__/
+.pytest_cache/
+.venv/
+# Model-generated scheduling metadata
+src/native/worker/tail4_program.h
+# Private calibration, camera traces and handoff records
+data/config/
+data/freeze/
+data/perf.json
+data/ddr.json
+report/figures/
+report/reference/
+report/chat.json
+report/origins.csv
+report/changes.json
+report/delivery.json
+report/*_old.md
+board/version.json
+sim/checks.json
+sim/create.json
+sim/restore.json
+sim/runtime.json
+# Local machine/credential material
+*.lic
+*.pem
+*.key
+.env
+.env.*
+# Original private build provenance; public BD and selected reports are separate
+build/di46/evidence/
+build/di46/joint/
+build/di46/qualified_export/
+build/di46/*.private.*
+build/di46/clone_validate_sc_ooc.tcl
+build/di46/export_qualified.tcl

@@ -1,0 +1,44 @@
+{
+  "project": "TwinCoach",
+  "date": "2026-10-31",
+  "hardware": "di46ddr200_20261031",
+  "mode": "dual_full33",
+  "scope": "Actual recorded JPEG input, real dual Full33 inference and HDMI completion; not live-human or physical scanout qualification",
+  "replay": {
+    "duration_s": 45.019937339,
+    "input_frames": 2698,
+    "hot_window_s": [
+      15,
+      44
+    ],
+    "hot_true_pose_pair_confirmations": 668,
+    "mean_true_pose_pairs_fps": 23.03448275862069,
+    "min_rolling_1s_true_pose_pairs": 20,
+    "p95_source_age_ms": 290.432884,
+    "maximum_confirmation_gap_ms": 104.667745
+  },
+  "hardware_resources": {
+    "setup_ns": 0.017,
+    "hold_ns": 0.008,
+    "TNS_ns": 0,
+    "THS_ns": 0,
+    "CLB": 14629,
+    "CLB_available": 14640,
+    "LUT": 78404,
+    "FF": 115916,
+    "BRAM36_equivalents": 139,
+    "DSP": 655,
+    "URAM": 64,
+    "fully_routed_nets": 195423,
+    "route_errors": 0,
+    "DRC_errors": 0,
+    "DRC_warnings": 642
+  },
+  "compute_clocks_mhz": {
+    "DPU_AXI_core": 100,
+    "DPU_2x": 200,
+    "Tail4": 200,
+    "ROI_DMA_shared": 100
+  },
+  "source": "Selected frozen benchmark records; original tensor/weights/firmware unchanged."
+}

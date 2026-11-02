@@ -1,0 +1,343 @@
+{
+  "schema": "posepriv.private.full33_runtime_assets.v1",
+  "policy": "No automatic artifact discovery. Every external artifact must have an explicit source, origin and license. Models and personal mesh stay private. Native ELF/CPython libraries must be the actual AArch64 CPython3.10 builds; .ko must match the running kernel and PL ABI.",
+  "artifacts": [
+    {
+      "role": "prefix_xmodel",
+      "kind": "first60 B3136 DPU INT8 graph",
+      "destination": "model/prefix.xmodel",
+      "required": true,
+      "board_location_hint": "model/prefix.xmodel",
+      "provenance": "Derived existing MediaPipe Full landmark task; upstream Apache-2.0, actual quantization/export manifest must accompany handoff"
+    },
+    {
+      "role": "tail_weights",
+      "kind": "Tail35 W16 weights",
+      "destination": "model/model.W.bin",
+      "required": true,
+      "board_location_hint": "model/model.W.bin",
+      "provenance": "Same frozen Full model and exact Tail4 packing"
+    },
+    {
+      "role": "tail_parameters",
+      "kind": "Tail35 exact program parameters",
+      "destination": "model/model.P.bin",
+      "required": true,
+      "board_location_hint": "model/model.P.bin",
+      "provenance": "Same frozen Tail4 program/weights pairing"
+    },
+    {
+      "role": "detector",
+      "kind": "existing pose detector TFLite",
+      "destination": "model/pose_detector.tflite",
+      "required": true,
+      "board_location_hint": "model/pose_detector.tflite",
+      "provenance": "Existing Full.task pose_detector.tflite; Google MediaPipe Apache-2.0, no new checkpoint"
+    },
+    {
+      "role": "shm_worker",
+      "kind": "AArch64 persistent DPU+Tail35 memfd worker ELF",
+      "destination": "runtime/tail4_shm_worker",
+      "required": true,
+      "executable": true,
+      "board_location_hint": "candidate/tail4_shm_worker_20261030/tail4_shm_worker",
+      "provenance": "Project GPL-2.0-only; exact frozen source included"
+    },
+    {
+      "role": "xclbin",
+      "kind": "DPU B3136 metadata matching current B200 joint boot",
+      "destination": "runtime/posepriv-dpu-isolation.xclbin",
+      "required": true,
+      "board_location_hint": "runtime/posepriv-dpu-isolation.xclbin",
+      "provenance": "Existing qualified joint build; retain AMD metadata provenance/license"
+    },
+    {
+      "role": "boot_manifest",
+      "kind": "exact unified SD candidate metadata",
+      "destination": "runtime/unified_sd_candidate.json",
+      "required": true,
+      "board_location_hint": "runtime/unified_sd_candidate.json",
+      "provenance": "Must byte-match current /boot/firmware/unified_sd_candidate.json; no package-driven PL reload"
+    },
+    {
+      "role": "shared_dma_driver",
+      "kind": "PPS4 kernel module",
+      "destination": "runtime/posepriv_shared_dma.ko",
+      "required": true,
+      "board_location_hint": "runtime/posepriv_shared_dma.ko",
+      "provenance": "Project GPL kernel driver, running-kernel build"
+    },
+    {
+      "role": "tail_driver",
+      "kind": "Tail4 kernel module",
+      "destination": "runtime/posepriv_tail4.ko",
+      "required": true,
+      "board_location_hint": "runtime/posepriv_tail4.ko",
+      "provenance": "Project GPL kernel driver, Tail4 ABI and running-kernel build; root owns bringup"
+    },
+    {
+      "role": "skinning_validator",
+      "kind": "AArch64 native skinning validation",
+      "destination": "runtime/libposepriv_skinning_validator.so",
+      "required": true,
+      "provenance": "Existing matched project GPL-2.0-only ARM library"
+    },
+    {
+      "role": "affine",
+      "kind": "AArch64 affine composer",
+      "destination": "runtime/libposepriv_affine.so",
+      "required": true,
+      "provenance": "Existing project GPL-2.0-only native geometry"
+    },
+    {
+      "role": "bone_limb",
+      "kind": "AArch64 bone/limb builder",
+      "destination": "runtime/libposepriv_bone_limb.so",
+      "required": true,
+      "provenance": "Existing project GPL-2.0-only native geometry"
+    },
+    {
+      "role": "gles_prep",
+      "kind": "AArch64 normal matrix preparation",
+      "destination": "runtime/libposepriv_gles_prep.so",
+      "required": true,
+      "provenance": "Existing project GPL-2.0-only"
+    },
+    {
+      "role": "rig_tail",
+      "kind": "AArch64 CPython3.10 13-bone tail",
+      "destination": "runtime/libposepriv_rig_tail.so",
+      "required": true,
+      "provenance": "Existing project GPL-2.0-only, exact current CPython ABI"
+    },
+    {
+      "role": "crop",
+      "kind": "AArch64 NEON fast Q7 crop",
+      "destination": "runtime/libposepriv_crop_q7.so",
+      "required": true,
+      "board_location_hint": "runtime/libposepriv_crop_q7.so",
+      "provenance": "Existing project GPL-2.0-only measured NEON_fast"
+    },
+    {
+      "role": "decode",
+      "kind": "AArch64 nativeV2 Full33 decoder",
+      "destination": "runtime/libtail4_decode.so",
+      "required": true,
+      "board_location_hint": "runtime/libtail4_decode.so",
+      "provenance": "Existing project nativeV2, pinned MediaPipe calculator algorithm Apache-2.0 reference; keep source/license registration"
+    },
+    {
+      "role": "gles_submit",
+      "kind": "AArch64 native GL batch submit",
+      "destination": "runtime/libposepriv_gles_submit.public-20261031.so",
+      "required": true,
+      "board_location_hint": "runtime/libposepriv_gles_submit.public-20261031.so",
+      "provenance": "Existing project GPL-2.0-only native submit"
+    },
+    {
+      "role": "world_math",
+      "kind": "AArch64 CPython3.10 world math",
+      "destination": "runtime/libposepriv_world_math.public-20261031.so",
+      "required": true,
+      "board_location_hint": "runtime/libposepriv_world_math.public-20261031.so",
+      "provenance": "Existing project GPL-2.0-only, no fast-math/FMA"
+    },
+    {
+      "role": "world_metadata",
+      "kind": "AArch64 CPython3.10 metadata boundary",
+      "destination": "runtime/libposepriv_world_metadata.so",
+      "required": true,
+      "board_location_hint": "runtime/libposepriv_world_metadata.so",
+      "provenance": "Existing project GPL-2.0-only"
+    },
+    {
+      "role": "world_prepare",
+      "kind": "AArch64 CPython3.10/NumPy initial plan",
+      "destination": "runtime/libposepriv_world_prepare.public-20261031.so",
+      "required": true,
+      "board_location_hint": "runtime/libposepriv_world_prepare.public-20261031.so",
+      "provenance": "Current public NativeWorldPlan C builder; project GPL-2.0-only"
+    },
+    {
+      "role": "world_filter",
+      "kind": "AArch64 CPython3.10 typed33 filter",
+      "destination": "candidate/tail4_world_filter_native_20261031/libposepriv_world_filter.so",
+      "required": true,
+      "board_location_hint": "candidate/tail4_world_filter_native_20261031/libposepriv_world_filter.so",
+      "provenance": "Existing project GPL-2.0-only exact One Euro state"
+    },
+    {
+      "role": "python_runtime",
+      "kind": "directory: isolated CPython3.10 aarch64 LiteRT/NumPy bundle with dist-info/licenses",
+      "destination": "python",
+      "required": true,
+      "provenance": "Existing registered LiteRT2.2/NumPy1.26.4 bundle; preserve every third-party license/dist-info"
+    },
+    {
+      "role": "avatar_mesh",
+      "kind": "explicit private personal avatar mesh",
+      "destination": "assets/avatar.private.json",
+      "required": true,
+      "provenance": "Existing user-approved personalized mesh; retain actual base asset source/license and private authoring provenance, no automatic personal-data pickup"
+    },
+    {
+      "role": "artifact_provenance",
+      "kind": "file: exact model/PL/ARM artifact handoff manifest and license references",
+      "destination": "licenses/artifact_handoff.private.json",
+      "required": true,
+      "provenance": "Root supplies actual frozen build and model origin records; no invented identifiers"
+    },
+    {
+      "role": "jpeg_decode",
+      "kind": "AArch64 precise libjpeg8 BGR/rotation leaf",
+      "destination": "runtime/libposepriv_jpeg_decode.so",
+      "required": true,
+      "board_location_hint": "runtime/libposepriv_jpeg_decode.so",
+      "provenance": "Project GPL-2.0-only adapter linked to existing target libjpeg-turbo2.1.2 API80; original JPEG pixels/settings retained"
+    },
+    {
+      "role": "tail_program_header",
+      "kind": "Frozen model-derived Tail35 dispatch schedule header, private model artifact",
+      "destination": "candidate/tail4_shm_worker_20261030/tail4_program.h",
+      "required": true,
+      "provenance": "Exact model-derived schedule matching prefix/W/P and the native worker; shapes/fix points/offsets kept with private model artifacts rather than public Git"
+    },
+    {
+      "role": "roi_crop_map",
+      "kind": "Optional AArch64 exact Q5 coordinate map library for explicit ROI1 hardware gather",
+      "destination": "runtime/libposepriv_crop_map.so",
+      "required": false,
+      "board_location_hint": "runtime/libposepriv_crop_map.so",
+      "provenance": "Project GPL-2.0-only; crop_map_q5.c includes adjacent frozen crop_q7.c; optional ROI1 mode only, source staging timing is not hardware crop speed"
+    },
+    {
+      "role": "jpeg_license",
+      "kind": "Installed target libjpeg-turbo8-dev original copyright",
+      "destination": "licenses/libjpeg-turbo-installed-copyright.txt",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/tail4_jpeg_decode_20261031/headers/copyright",
+      "origin": "Read-only copy of installed libjpeg-turbo8-dev2.1.2 package copyright",
+      "license": "Original IJG/BSD/zlib notices, file unchanged"
+    },
+    {
+      "role": "hybrid_pair_worker",
+      "destination": "runtime/hybrid_pair_worker",
+      "kind": "AArch64 same-PID Full33+Lightning worker ELF",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-hybrid-stream-20261031/candidate/hybrid_stream_20261031/pair_worker/hybrid_pair_worker",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Project GPL-2.0-only; built from included hybrid/common source",
+      "executable": true
+    },
+    {
+      "role": "lightning_xmodel",
+      "destination": "model/lightning.xmodel",
+      "kind": "existing Google Lightning method1+CLE B3136 xmodel",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-lightning-candidate-20261023/model/lightning-method1-cle-B3136.xmodel",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Google Apache-2.0 model derivative; AMD compiler license separate"
+    },
+    {
+      "role": "lightning_mapping",
+      "destination": "config/lightning_cnn_mapping.json",
+      "kind": "exact existing raw head names/shapes/fix points",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-lightning-candidate-20261023/config/lightning-cnn-mapping.json",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Google model-derived metadata Apache-2.0"
+    },
+    {
+      "role": "lightning_post_model",
+      "destination": "model/lightning_post.tflite",
+      "kind": "existing float-post-only TFLite graph",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-lightning-candidate-20261023/model/float-post-only.tflite",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Google Apache-2.0 derived existing SavedModel graph"
+    },
+    {
+      "role": "lightning_post_mapping",
+      "destination": "config/lightning_post_mapping.json",
+      "kind": "existing post graph role/name mapping",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-lightning-candidate-20261023/config/lightning-post-mapping.json",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Google model-derived metadata Apache-2.0"
+    },
+    {
+      "role": "lightning_native_post",
+      "destination": "runtime/libmovenet_post_neon.so",
+      "kind": "actual AArch64 exact native raw-head post ELF",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-realtime-headcue-20261028/runtime/libmovenet_post_neon.so",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Project GPL-2.0-only; original native post source included"
+    },
+    {
+      "role": "lightning_post_contract",
+      "destination": "runtime/movenet_post_contract.private.npz",
+      "kind": "exact fixed post-model bytes/constants contract; private model artifact",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/home/ubuntu/posepriv-realtime-headcue-20261028/runtime/movenet_post_contract.private.npz",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Google model-derived constants Apache-2.0; existing project contract"
+    },
+    {
+      "role": "lightning_model_license",
+      "destination": "licenses/GOOGLE_MODEL_LICENSE",
+      "kind": "original complete Google model license",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/deadline_20261023/candidate-stage/licenses/GOOGLE_MODEL_LICENSE",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "role": "lightning_artifact_provenance",
+      "destination": "licenses/lightning_handoff.private.json",
+      "kind": "exact existing quantization/export/native-post provenance",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/tail4_mixed_views_20261031/model_evidence.private.json",
+      "origin": "Existing accepted Lightning artifacts; see hybrid_stream_20261031/sources.json and docs/third_party_dependencies.md",
+      "license": "Preserve actual Google Apache-2.0/model and project GPL notices"
+    },
+    {
+      "role": "display_v2_camera_reference",
+      "destination": "config/display_v2_experimental.private.json",
+      "kind": "Explicit reviewed fixed-camera geometry and neutral display reference",
+      "required": false,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/tail4_two_view_torso_input_20261031/head-translation/runtime_bridge/experimental-camera-profile.private.json",
+      "origin": "User-authorized fixed cameras, nine reviewed neutral images and existing calibrated K/R",
+      "license": "Private user calibration, project-derived display parameters; not a new model"
+    },
+    {
+      "role": "display_v2_native_geometry",
+      "destination": "runtime/libposepriv_v2_math.so",
+      "kind": "actual AArch64 native geometry leaf ELF",
+      "required": true,
+      "source": "/home/haoyu/fpga_projects/fpga_competion/posepriv_linux_migration_20261020/development/build/linux_migration/avatar_goal_v2_20261029/hybrid_runtime_delivery_20261031/board-assets/libposepriv_v2_math.so",
+      "origin": "Existing project v2 torso/arm native geometry; built from included project C source and downloaded by root",
+      "license": "GPL-2.0-only project native geometry"
+    },
+    {
+      "role": "head_math_batch",
+      "destination": "runtime/libposepriv_head_batch.so",
+      "kind": "native-library",
+      "required": false
+    },
+    {
+      "role": "rig_limb_math_batch",
+      "destination": "runtime/libposepriv_rig_limb_batch.so",
+      "kind": "native-library",
+      "required": false
+    }
+  ],
+  "system_prerequisites": [
+    "KV260 boots the existing qualified B200 joint DPU+Tail4+PPS4 bitstream, matching DT and kernel; this runtime does not install or reconfigure PL",
+    "Tail4 driver already bound with /dev/posepriv_tail4 accessible through the approved board bringup; shared supervisor preserves PPS4 driver lifecycle",
+    "Existing VART/XIR compatibility runtime in /opt/vitis-ai-compat/lib, system Boost/unilog/libc dependencies",
+    "Existing X11/DRM/EGL/Mali GLESv2 HDMI desktop, OpenCV and Pillow/CJK font support; Windows performs only SSH control",
+    "Existing passwordless narrowly scoped module/device sudo setup for run_shared_pose_session.sh; passwords never enter package or command arguments",
+    "Existing /usr/bin/v4l2-ctl and the two cameras exposure_dynamic_framerate control; tracked session wrapper applies explicit0 and restores originals on exit, without promising30FPS"
+  ]
+}

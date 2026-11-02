@@ -1,0 +1,44 @@
+/* SPDX-License-Identifier: GPL-2.0-only */
+/* Frozen private ABI ROI1 v1.0; independent node, not PPS4 op4 or cap bit. */
+#ifndef POSEPRIV_ROI1_REGS_H
+#define POSEPRIV_ROI1_REGS_H
+#define ROI1_ID 0x524f4931U
+#define ROI1_VERSION 0x00010000U
+#define ROI1_REG_ID 0x00U
+#define ROI1_REG_VERSION 0x04U
+#define ROI1_REG_COMMAND 0x08U
+#define ROI1_REG_STATUS 0x0cU
+#define ROI1_REG_TICKET_LO 0x10U
+#define ROI1_REG_TICKET_HI 0x14U
+#define ROI1_REG_OUTPUT_BYTES 0x18U
+#define ROI1_REG_MAP_BYTES 0x1cU
+#define ROI1_REG_SOURCE_LO 0x20U
+#define ROI1_REG_SOURCE_HI 0x24U
+#define ROI1_REG_MAP_LO 0x28U
+#define ROI1_REG_MAP_HI 0x2cU
+#define ROI1_REG_DIMS 0x30U /* H[27:16], W[11:0], reserved bits must be zero */
+#define ROI1_REG_STRIDE 0x34U
+#define ROI1_REG_CONFIG_TICKET_LO 0x38U
+#define ROI1_REG_CONFIG_TICKET_HI 0x3cU
+#define ROI1_REG_STREAM_BYTES 0x40U /* Includes error terminator, not tensor-valid. */
+#define ROI1_CMD_START 1U
+#define ROI1_CMD_CANCEL 2U
+#define ROI1_CMD_ACK 4U
+#define ROI1_CMD_ARM_ROI 8U
+#define ROI1_CMD_RELEASE_LEGACY 16U
+#define ROI1_STATUS_BUSY (1U<<0)
+#define ROI1_STATUS_DONE (1U<<1)
+#define ROI1_STATUS_SUCCESS (1U<<2)
+#define ROI1_STATUS_ERROR (1U<<3)
+#define ROI1_STATUS_CANCELLED (1U<<4)
+#define ROI1_STATUS_ROUTE_ROI (1U<<5)
+#define ROI1_STATUS_ABORT_EMIT (1U<<6)
+#define ROI1_STATUS_CORE_QUIESCED (1U<<7)
+#define ROI1_STATUS_FRAME_ENDED (1U<<8)
+#define ROI1_STATUS_READ_QUIESCED (1U<<9) /* Only meaningful after accepted CANCEL. */
+#define ROI1_STATUS_ERROR_SHIFT 12U
+#define ROI1_STATUS_ERROR_MASK (15U<<ROI1_STATUS_ERROR_SHIFT)
+#define ROI1_STATUS_LEGACY_PACKET (1U<<16)
+#define ROI1_OUTPUT_BYTES 196608U
+#define ROI1_MAP_BYTES 262144U
+#endif

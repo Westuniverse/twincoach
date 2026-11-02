@@ -1,0 +1,806 @@
+{
+  "source_project": "build/ross_tail4_ddr_exit200_20261031/posepriv_ddr_exit200.xpr",
+  "part": "xck26-sfvc784-2LV-c",
+  "board_part": "xilinx.com:kv260_som:part0:1.4",
+  "top": "posepriv_dpu_isolation_wrapper",
+  "files": [
+    {
+      "source": "src/rtl/dpu_control/dpu_xrt_control_bridge.sv",
+      "destination": "src/rtl/dpu_xrt_control_bridge.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/dpu_control/dpu_xrt_control_bridge_bd.v",
+      "destination": "src/rtl/dpu_xrt_control_bridge_bd.v",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/affine_quantize_3d.sv",
+      "destination": "src/rtl/affine_quantize_3d.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/affine_transform_3d_core.sv",
+      "destination": "src/rtl/affine_transform_3d_core.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_bilinear_rgb8_axis.sv",
+      "destination": "src/rtl/avatar_bilinear_rgb8_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_raster_fragments.sv",
+      "destination": "src/rtl/avatar_raster_fragments.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_raster_packet_axis.sv",
+      "destination": "src/rtl/avatar_raster_packet_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_raster_texture_axis.sv",
+      "destination": "src/rtl/avatar_raster_texture_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_raster_tile_axis.sv",
+      "destination": "src/rtl/avatar_raster_tile_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_skinning_packet_axis.sv",
+      "destination": "src/rtl/avatar_skinning_packet_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_texture_cache.sv",
+      "destination": "src/rtl/avatar_texture_cache.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_tile_buffer.sv",
+      "destination": "src/rtl/avatar_tile_buffer.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_triangle_lighting_axis.sv",
+      "destination": "src/rtl/avatar_triangle_lighting_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/avatar_accel/avatar_triangle_lighting_core.sv",
+      "destination": "src/rtl/avatar_triangle_lighting_core.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/joint_metrics_axis.sv",
+      "destination": "src/rtl/joint_metrics_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/joint_metrics_core.sv",
+      "destination": "src/rtl/joint_metrics_core.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/geometry_accel/rectified_triangulation_axis.sv",
+      "destination": "src/rtl/rectified_triangulation_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/shared_pose_accel_axis.sv",
+      "destination": "src/rtl/shared_pose_accel_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/temporal_motion_axis.sv",
+      "destination": "src/rtl/temporal_motion_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/temporal_motion_core.sv",
+      "destination": "src/rtl/temporal_motion_core.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/temporal_motion_stats_axis.sv",
+      "destination": "src/rtl/temporal_motion_stats_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/temporal_motion_summary_axis_ip.sv",
+      "destination": "src/rtl/temporal_motion_summary_axis_ip.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/vector_metrics_core.sv",
+      "destination": "src/rtl/vector_metrics_core.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_skin_zero_skip_20261031/joint/rtl/vertex_skinning_serial_axis.sv",
+      "destination": "src/rtl/vertex_skinning_serial_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/shared_pose_accel_axis_ip.sv",
+      "destination": "src/rtl/shared_pose_accel_axis_ip.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/dpu_control/dpu_axi_observer.sv",
+      "destination": "src/rtl/dpu_axi_observer.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/full33_head4_s16.sv",
+      "destination": "src/rtl/full33_head4_s16.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/head4_mac_s16.sv",
+      "destination": "src/rtl/head4_mac_s16.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/head4_requant_s48.sv",
+      "destination": "src/rtl/head4_requant_s48.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tail4_compute.sv",
+      "destination": "src/rtl/tail4_compute.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tail4_conv_axi.sv",
+      "destination": "src/rtl/tail4_conv_axi.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tail4_feature_feeder.sv",
+      "destination": "src/rtl/tail4_feature_feeder.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tail4_nonconv_axi.sv",
+      "destination": "src/rtl/tail4_nonconv_axi.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tail4_operator_axi.sv",
+      "destination": "src/rtl/tail4_operator_axi.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tensor_alu16_folded_s16.sv",
+      "destination": "src/rtl/tensor_alu16_folded_s16.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tensor_axi128_read.sv",
+      "destination": "src/rtl/tensor_axi128_read.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/rtl/tensor_axi128_write.sv",
+      "destination": "src/rtl/tensor_axi128_write.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_joint_addr_20261030/tail4_operator_axi_bd_joint.v",
+      "destination": "src/rtl/tail4_operator_axi_bd_joint.v",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_roi_dma_sampler_20261031/map_load_aabb/rtl/crop_bilinear_q7_axis.sv",
+      "destination": "src/rtl/crop_bilinear_q7_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_roi_dma_sampler_20261031/map_load_aabb/rtl/crop_tile128_q7_extent_axis.sv",
+      "destination": "src/rtl/crop_tile128_q7_extent_axis.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_roi_joint_20261031/rtl/roi_control_rx_axis128.sv",
+      "destination": "src/rtl/roi_control_rx_axis128.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_roi_joint_20261031/rtl/roi_dma_sampler_axis128.sv",
+      "destination": "src/rtl/roi_dma_sampler_axis128.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "build/linux_migration/avatar_goal_v2_20261029/tail4_roi_joint_20261031/rtl/roi_dma_sampler_ip.sv",
+      "destination": "src/rtl/roi_dma_sampler_ip.sv",
+      "attributes": [
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    },
+    {
+      "source": "src/rtl/exercise_metric_accel/joint_metrics_axis_ip.sv",
+      "destination": "src/rtl/joint_metrics_axis_ip.sv",
+      "attributes": [
+        {
+          "Name": "AutoDisabled",
+          "Val": "1"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "synthesis"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "implementation"
+        },
+        {
+          "Name": "UsedIn",
+          "Val": "simulation"
+        }
+      ]
+    }
+  ],
+  "constraints": "Original constrs_1 has no explicit file entries; IP/BD carry their constraints.",
+  "status": "Exact existing file inputs collected; new Vivado recreation not yet executed."
+}

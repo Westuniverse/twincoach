@@ -1,0 +1,125 @@
+{
+  "scope": "official calculator source only; no model/dependency install or NN execution",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/tasks/cc/vision/pose_landmarker/pose_landmarks_detector_graph.cc",
+      "local": "upstream/pose_landmarks_detector_graph.cc",
+      "bytes": 37805,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/refine_landmarks_from_heatmap_calculator.cc",
+      "local": "upstream/refine_landmarks_from_heatmap_calculator.cc",
+      "bytes": 7812,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/refine_landmarks_from_heatmap_calculator.proto",
+      "local": "upstream/refine_landmarks_from_heatmap_calculator.proto",
+      "bytes": 1085,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/tensors_to_landmarks_calculator.cc",
+      "local": "upstream/tensors_to_landmarks_calculator.cc",
+      "bytes": 8444,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/tensor/tensors_to_landmarks_calculator.proto",
+      "local": "upstream/tensors_to_landmarks_calculator.proto",
+      "bytes": 2619,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/landmark_projection_calculator.cc",
+      "local": "upstream/landmark_projection_calculator.cc",
+      "bytes": 11743,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/landmark_projection_calculator.proto",
+      "local": "upstream/landmark_projection_calculator.proto",
+      "bytes": 953,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/world_landmark_projection_calculator.cc",
+      "local": "upstream/world_landmark_projection_calculator.cc",
+      "bytes": 4127,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/landmark_letterbox_removal_calculator.cc",
+      "local": "upstream/landmark_letterbox_removal_calculator.cc",
+      "bytes": 5483,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/modules/pose_landmark/tensors_to_pose_landmarks_and_segmentation.pbtxt",
+      "local": "upstream/tensors_to_pose_landmarks_and_segmentation.pbtxt",
+      "bytes": 8055,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/LICENSE",
+      "local": "upstream/LICENSE",
+      "bytes": 12331,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/thresholding_calculator.cc",
+      "local": "upstream/thresholding_calculator.cc",
+      "bytes": 4867,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/alignment_points_to_rects_calculator.cc",
+      "local": "upstream/alignment_points_to_rects_calculator.cc",
+      "bytes": 3937,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/rect_transformation_calculator.cc",
+      "local": "upstream/rect_transformation_calculator.cc",
+      "bytes": 9368,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/landmarks_to_detection_calculator.cc",
+      "local": "upstream/landmarks_to_detection_calculator.cc",
+      "bytes": 4867,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/tasks/cc/vision/pose_detector/pose_detector_graph.cc",
+      "local": "upstream/pose_detector_graph.cc",
+      "bytes": 14587,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/mediapipe/calculators/util/detections_to_rects_calculator.cc",
+      "local": "upstream/detections_to_rects_calculator.cc",
+      "bytes": 12896,
+      "license": "Apache-2.0",
+      "tag": "v0.10.18"
+    }
+  ],
+  "version_boundary": "Matches earlier available0.10.18 ARM Task API generation. Original1.1.1 Task numerical equivalence is not established."
+}

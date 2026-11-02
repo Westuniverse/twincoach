@@ -1,0 +1,49 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * PosePriv-Coach 2026.1 统一 DPU+PL 平台的 Linux dma-proxy overlay。
+ *
+ * 该文件只声明四个自研 AXI DMA 的用户态通道；DPU、USB Host、V4L2
+ * 和显示节点由与 posepriv_unified_dpu.xsa 匹配的系统设备树生成。
+ * 两颗 C920e 属于 PS USB/UVC 外设，不应在本 overlay 中重复声明。
+ */
+/ {
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            posepriv_unified_avatar_proxy {
+                compatible = "xlnx,dma_proxy";
+                dmas = <&axi_dma_avatar 0>, <&axi_dma_avatar 1>;
+                dma-names = "posepriv_avatar_tx", "posepriv_avatar_rx";
+                status = "okay";
+            };
+
+            posepriv_unified_joint_proxy {
+                compatible = "xlnx,dma_proxy";
+                dmas = <&axi_dma_joint 0>, <&axi_dma_joint 1>;
+                dma-names = "posepriv_joint_tx", "posepriv_joint_rx";
+                status = "okay";
+            };
+
+            posepriv_unified_rectified_proxy {
+                compatible = "xlnx,dma_proxy";
+                dmas = <&axi_dma_rectified 0>, <&axi_dma_rectified 1>;
+                dma-names = "posepriv_rectified_tx", "posepriv_rectified_rx";
+                status = "okay";
+            };
+
+            posepriv_unified_motion_stats_proxy {
+                compatible = "xlnx,dma_proxy";
+                dmas = <&axi_dma_motion_stats 0>, <&axi_dma_motion_stats 1>;
+                dma-names = "posepriv_motion_stats_tx", "posepriv_motion_stats_rx";
+                status = "okay";
+            };
+        };
+    };
+};
+
+/* hardware_contract=avatar=0xA0000000, joint=0xA0010000,
+ * rectified=0xA0020000, motion_stats=0xA0030000
+ * source_xsa=build/vivado/kv260_unified_dpu/final/posepriv_unified_dpu.xsa
+ */

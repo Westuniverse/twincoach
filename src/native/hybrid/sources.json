@@ -1,0 +1,31 @@
+{
+  "schema": "posepriv.hybrid_source_origins.v1",
+  "project_implementation_license": "GPL-2.0-only",
+  "source_scope": "existing measured single-PID hybrid dispatch, original source/lease transport, explicit candidate only",
+  "models": [
+    {
+      "name": "Google MoveNet SinglePose Lightning v4",
+      "origin": "https://tfhub.dev/google/movenet/singlepose/lightning/4?tf-hub-format=compressed",
+      "model_card": "https://raw.githubusercontent.com/tensorflow/tfhub.dev/master/assets/docs/google/models/movenet/singlepose/lightning/4.md",
+      "license": "Apache-2.0",
+      "derivative": "Existing method1+CLE B3136 xmodel plus exact float-post-only graph; explicit external assets, no new training/download"
+    },
+    {
+      "name": "MediaPipe Full",
+      "origin": "https://github.com/google-ai-edge/mediapipe/tree/v0.10.18",
+      "license": "Apache-2.0",
+      "derivative": "Existing first60 DPU plus frozen Tail35 PL, unmodified common worker/runtime"
+    }
+  ],
+  "existing_registration": [
+    "docs/third_party_dependencies.md",
+    "docs/board_post_runtime_dependencies_20261023.md"
+  ],
+  "external_only": [
+    "all weights/xmodel/tflite/npz",
+    "tail4_program.h",
+    "ELF/ko/so",
+    "personal mesh or video"
+  ],
+  "common_source": "../tail4_shm_worker_20261030/tail4_shm_worker.cpp"
+}

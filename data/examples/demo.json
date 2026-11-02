@@ -1,0 +1,12 @@
+{
+  "description": "Generic Full33 display defaults; the frozen runtime supplies its private calibrated V2 profile explicitly.",
+  "config": {
+    "benchmark_presentations": true,
+    "benchmark_presentation_capacity": 32768,
+    "benchmark_presentation_compact": true,
+    "preview_rig_axis_batch": true,
+    "preview_static_mesh": true,
+    "preview_roi_crop": false
+  },
+  "package_relative_fields": []
+}

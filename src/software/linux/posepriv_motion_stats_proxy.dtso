@@ -1,0 +1,19 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * KV260 motion-stats DMA 的 Linux dma-proxy 客户端节点。
+ *
+ * 该文件只描述客户端，不重复声明 XSA 生成的
+ * axi_dma_motion_stats 控制器；控制器节点和中断必须来自与
+ * posepriv_motion_stats_dma.xsa 匹配的 system device tree。
+ * 需要先在内核中启用 AMD/Xilinx dma-proxy 驱动，再加载本 overlay。
+ */
+&{/} {
+    posepriv_motion_stats_proxy {
+        compatible = "xlnx,dma_proxy";
+        dmas = <&axi_dma_motion_stats 0>, <&axi_dma_motion_stats 1>;
+        dma-names = "posepriv_motion_stats_tx", "posepriv_motion_stats_rx";
+        status = "okay";
+    };
+};

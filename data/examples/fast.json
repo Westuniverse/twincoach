@@ -1,0 +1,12 @@
+{
+  "config": {
+    "benchmark_presentations": true,
+    "benchmark_presentation_capacity": 32768,
+    "benchmark_presentation_compact": true,
+    "preview_rig_axis_batch": true,
+    "preview_static_mesh": true,
+    "preview_roi_crop": false,
+    "preview_experimental_display_v2_profile": null
+  },
+  "package_relative_fields": []
+}

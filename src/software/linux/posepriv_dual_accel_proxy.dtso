@@ -1,0 +1,33 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * 由 config/kv260_dual_accel_hardware.json 生成。
+ *
+ * 这是当前双自研加速器基线的 dma-proxy 客户端 overlay：
+ * Avatar 蒙皮和 Joint 指标各提供一组 TX/RX 通道。DMA 控制器节点、
+ * 中断号以及父设备树必须来自同一份 XSA 的 system device tree；本文件
+ * 不把独立 overlay 伪装成包含 B3136 DPU 的最终比赛镜像。
+ */
+/ {
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            posepriv_avatar_proxy {
+                compatible = "xlnx,dma_proxy";
+                dmas = <&axi_dma_avatar 0>, <&axi_dma_avatar 1>;
+                dma-names = "posepriv_avatar_tx", "posepriv_avatar_rx";
+                status = "okay";
+            };
+
+            posepriv_joint_proxy {
+                compatible = "xlnx,dma_proxy";
+                dmas = <&axi_dma_joint 0>, <&axi_dma_joint 1>;
+                dma-names = "posepriv_joint_tx", "posepriv_joint_rx";
+                status = "okay";
+            };
+        };
+    };
+};
+
+/* 硬件核对：avatar=0xA0000000，joint=0xA0010000；四个中断向量来自同一份 XSA。 */

@@ -1,0 +1,156 @@
+{
+  "project": "TwinCoach",
+  "passed": true,
+  "checks": [
+    {
+      "check": "guide_layout",
+      "passed": true
+    },
+    {
+      "check": "runtime_source_closure",
+      "passed": true,
+      "files": 401
+    },
+    {
+      "check": "python_source_parse",
+      "passed": true
+    },
+    {
+      "check": "actual_hdl_inputs",
+      "passed": true,
+      "files": 44
+    },
+    {
+      "check": "control_reference",
+      "passed": true,
+      "script": "restore.ps1",
+      "target": "restore-p4.ps1"
+    },
+    {
+      "check": "control_reference",
+      "passed": true,
+      "script": "stop.ps1",
+      "target": "stop-run.ps1"
+    },
+    {
+      "check": "control_reference",
+      "passed": true,
+      "script": "start.ps1",
+      "target": "start-hybrid.ps1"
+    },
+    {
+      "check": "control_reference",
+      "passed": true,
+      "script": "start.ps1",
+      "target": "start-full.ps1"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "report/design.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "report/results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "build/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "skill/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "report/third_party.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "report/assets.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "data/results.json"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "board/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "readme.md",
+      "target": "license.txt"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "build/readme.md",
+      "target": "../report/assets.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "build/readme.md",
+      "target": "../report/results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "results.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "../build/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "../sim/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "llm.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "../skill/readme.md"
+    },
+    {
+      "check": "document_link",
+      "passed": true,
+      "document": "report/design.md",
+      "target": "gaps.md"
+    },
+    {
+      "check": "host_tests",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "scope": "Public sources and host functions; does not execute model inference, synthesis or board operation."
+}

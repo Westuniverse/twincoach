@@ -1,0 +1,11 @@
+{
+  "window_s": [
+    15,
+    44
+  ],
+  "fresh_outputs": 668,
+  "fresh_outputs_per_s": 23.03448275862069,
+  "p95_source_age_ms": 290.432884,
+  "max_confirmation_gap_ms": 104.667745,
+  "p95_method": "sorted[floor(.95*(n-1))]"
+}

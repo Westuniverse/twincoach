@@ -1,0 +1,5 @@
+{
+  "config": {},
+  "package_relative_fields": [],
+  "instruction": "Root can add a later measured JPEG/decode config key and declare only its file-valued fields as package-relative. Values and actual file artifacts must come from that measured adapter; this example does not enable an unmeasured decoder."
+}
